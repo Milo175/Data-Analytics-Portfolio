@@ -152,30 +152,32 @@ MODIFY COLUMN `TIME HOUR` INT AFTER `TIME OCC`,
 MODIFY COLUMN `TIME MINUTE` INT AFTER `TIME HOUR`
 
 ;
-#18 calculate the count for each individual mo_code to identify most common operation methods
-SELECT mocode, COUNT(*) AS mocode_count
+#18 calculate the count for each individual mo_code to identify most common operation methods per year
+SELECT 
+    new_date,
+    mocode, 
+    COUNT(*) AS mocode_count
 FROM (
-    SELECT Mocodes_1 AS mocode FROM crime_data_from_2020_to_present WHERE Mocodes_1 IS NOT NULL
+    SELECT Mocodes_1 AS mocode, YEAR(STR_TO_DATE(`DATE OCC`, '%m/%d/%Y')) as new_date FROM crime_data_from_2020_to_present WHERE Mocodes_1 IS NOT NULL
     UNION ALL
-    SELECT Mocodes_2 FROM crime_data_from_2020_to_present WHERE Mocodes_2 IS NOT NULL
+    SELECT Mocodes_2, YEAR(STR_TO_DATE(`DATE OCC`, '%m/%d/%Y')) FROM crime_data_from_2020_to_present WHERE Mocodes_2 IS NOT NULL
     UNION ALL
-    SELECT Mocodes_3 FROM crime_data_from_2020_to_present WHERE Mocodes_3 IS NOT NULL
+    SELECT Mocodes_3, YEAR(STR_TO_DATE(`DATE OCC`, '%m/%d/%Y')) FROM crime_data_from_2020_to_present WHERE Mocodes_3 IS NOT NULL
     UNION ALL
-    SELECT Mocodes_4 FROM crime_data_from_2020_to_present WHERE Mocodes_4 IS NOT NULL
+    SELECT Mocodes_4, YEAR(STR_TO_DATE(`DATE OCC`, '%m/%d/%Y')) FROM crime_data_from_2020_to_present WHERE Mocodes_4 IS NOT NULL
     UNION ALL
-    SELECT Mocodes_5 FROM crime_data_from_2020_to_present WHERE Mocodes_5 IS NOT NULL
+    SELECT Mocodes_5, YEAR(STR_TO_DATE(`DATE OCC`, '%m/%d/%Y')) FROM crime_data_from_2020_to_present WHERE Mocodes_5 IS NOT NULL
     UNION ALL
-    SELECT Mocodes_6 FROM crime_data_from_2020_to_present WHERE Mocodes_6 IS NOT NULL
+    SELECT Mocodes_6, YEAR(STR_TO_DATE(`DATE OCC`, '%m/%d/%Y')) FROM crime_data_from_2020_to_present WHERE Mocodes_6 IS NOT NULL
     UNION ALL
-    SELECT Mocodes_7 FROM crime_data_from_2020_to_present WHERE Mocodes_7 IS NOT NULL
+    SELECT Mocodes_7, YEAR(STR_TO_DATE(`DATE OCC`, '%m/%d/%Y')) FROM crime_data_from_2020_to_present WHERE Mocodes_7 IS NOT NULL
     UNION ALL
-    SELECT Mocodes_8 FROM crime_data_from_2020_to_present WHERE Mocodes_8 IS NOT NULL
+    SELECT Mocodes_8, YEAR(STR_TO_DATE(`DATE OCC`, '%m/%d/%Y')) FROM crime_data_from_2020_to_present WHERE Mocodes_8 IS NOT NULL
     UNION ALL
-    SELECT Mocodes_9 FROM crime_data_from_2020_to_present WHERE Mocodes_9 IS NOT NULL
+    SELECT Mocodes_9, YEAR(STR_TO_DATE(`DATE OCC`, '%m/%d/%Y')) FROM crime_data_from_2020_to_present WHERE Mocodes_9 IS NOT NULL
     UNION ALL
-    SELECT Mocodes_10 FROM crime_data_from_2020_to_present WHERE Mocodes_10 IS NOT NULL
+    SELECT Mocodes_10, YEAR(STR_TO_DATE(`DATE OCC`, '%m/%d/%Y')) FROM crime_data_from_2020_to_present WHERE Mocodes_10 IS NOT NULL
 ) AS mocodes_sub
-GROUP BY mocode
-ORDER BY mocode_count DESC
+GROUP BY new_date, mocode
 
 ;
