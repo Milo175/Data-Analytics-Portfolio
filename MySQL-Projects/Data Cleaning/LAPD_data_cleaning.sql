@@ -144,3 +144,38 @@ UPDATE crime_data_from_2020_to_present
 SET 
 	`Date Rptd` = LEFT(`Date Rptd`, 10),
 	`DATE OCC` = LEFT(`DATE OCC`, 10)
+
+;
+#17 change order of columns to match location hierarchy
+ALTER TABLE crime_data_from_2020_to_present
+MODIFY COLUMN `TIME HOUR` INT AFTER `TIME OCC`,
+MODIFY COLUMN `TIME MINUTE` INT AFTER `TIME HOUR`
+
+;
+#18 calculate the count for each individual mo_code to identify most common operation methods
+SELECT mocode, COUNT(*) AS mocode_count
+FROM (
+    SELECT Mocodes_1 AS mocode FROM crime_data_from_2020_to_present WHERE Mocodes_1 IS NOT NULL
+    UNION ALL
+    SELECT Mocodes_2 FROM crime_data_from_2020_to_present WHERE Mocodes_2 IS NOT NULL
+    UNION ALL
+    SELECT Mocodes_3 FROM crime_data_from_2020_to_present WHERE Mocodes_3 IS NOT NULL
+    UNION ALL
+    SELECT Mocodes_4 FROM crime_data_from_2020_to_present WHERE Mocodes_4 IS NOT NULL
+    UNION ALL
+    SELECT Mocodes_5 FROM crime_data_from_2020_to_present WHERE Mocodes_5 IS NOT NULL
+    UNION ALL
+    SELECT Mocodes_6 FROM crime_data_from_2020_to_present WHERE Mocodes_6 IS NOT NULL
+    UNION ALL
+    SELECT Mocodes_7 FROM crime_data_from_2020_to_present WHERE Mocodes_7 IS NOT NULL
+    UNION ALL
+    SELECT Mocodes_8 FROM crime_data_from_2020_to_present WHERE Mocodes_8 IS NOT NULL
+    UNION ALL
+    SELECT Mocodes_9 FROM crime_data_from_2020_to_present WHERE Mocodes_9 IS NOT NULL
+    UNION ALL
+    SELECT Mocodes_10 FROM crime_data_from_2020_to_present WHERE Mocodes_10 IS NOT NULL
+) AS mocodes_sub
+GROUP BY mocode
+ORDER BY mocode_count DESC
+
+;
