@@ -113,21 +113,21 @@ ALTER TABLE crime_data_from_2020_to_present
 MODIFY COLUMN `street_number` VARCHAR(20)
 
 ;
-#11 add the street name numbers into the new street_name column
+#11 add the numerical value of street name into the new street_name column
 UPDATE crime_data_from_2020_to_present
 SET `street_number` = SUBSTRING_INDEX(LOCATION, ' ', 1)
 WHERE LOCATION REGEXP '^[0-9]' 
 AND SUBSTRING_INDEX(LOCATION, ' ', 1) NOT REGEXP '^[0-9]+(rd|th|nd|st)$'
 
 ;
-#12 locates the position of the first space, indicating the switch from numbers to characters and changing accordingly
+#12 If street has numbers in it, its at the start. Below code locates the position of the first space, indicating the switch from numbers to characters and modifies the street name to only keep the characters
 UPDATE crime_data_from_2020_to_present
 SET LOCATION = LTRIM(SUBSTRING(LOCATION FROM LOCATE(' ', LOCATION, +1)))
 WHERE LOCATION REGEXP'^[0-9]'
 AND SUBSTRING_INDEX(LOCATION, ' ', 1) NOT REGEXP '^[0-9]+(rd|th|nd|st)$'
 
 ;
-#13 change order of columns to match the location hierarchy
+#13 change chronological order of columns to match the location hierarchy
 ALTER TABLE crime_data_from_2020_to_present
 MODIFY COLUMN `street_number` VARCHAR(20)
 AFTER `Crm Cd 4`
