@@ -2,7 +2,6 @@ SELECT *
 FROM crime_data_from_2020_to_present
 
 ;
-
 #1 check for duplicates - none found
 SELECT 
 	COUNT(DR_NO) as a,
@@ -10,14 +9,13 @@ SELECT
 FROM crime_data_from_2020_to_present
 GROUP BY DR_NO
 HAVING a > 2
-;
 
+;
 #2 clean the inconsistent use of multiple white spaces in location values
 UPDATE crime_data_from_2020_to_present
 SET LOCATION = TRIM(REGEXP_REPLACE(LOCATION, ' {2,}', ' '))
 
 ;
-
 #3 clean the inconsistent use of multiple white spaces in cross street values
 UPDATE crime_data_from_2020_to_present
 SET `Cross Street` = TRIM(REGEXP_REPLACE(`Cross Street`, ' {2,}', ' '))
@@ -43,9 +41,7 @@ ADD COLUMN Mocodes_8 INT,
 ADD COLUMN Mocodes_9 INT,
 ADD COLUMN Mocodes_10 INT
 
-
 ;
-
 #6 separate the mocodes by each individual code, will help later analysis on mocodes 2/2
 UPDATE crime_data_from_2020_to_present
 SET
