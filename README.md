@@ -59,7 +59,7 @@ The data used for this analysis has been directly downloaded from the City of Lo
 
 **Data Transformation**
 - Link to file with all DAX measure and calculated column formulas used for this project: [link](PowerBI-Projects/dax_and_columns)
-- Or click [here](#anchor-extra-materials) to scroll to the extra material page in this ReadMe file to view them in a clear overview
+- Or click [here](#anchor-extra-materials) to scroll to the extra material page in this ReadMe file to view them in a clear overview <a name:"anchor-data-transformation"></a>
 
 ## Data Modeling 
 One simple many to one (* > 1) data model was used to create the mo-code analysis page. For this page, I exported a table including each individual mo-code from each individual crime scene plus their count. I downloaded the mo-codes plus description from the LAPD website, and modeled them together to add the description to my own table. 
@@ -158,7 +158,7 @@ Note: please see analysis to see why weapon type 'description missing' is import
 ## Recommendations
 
 
-## Extra Materials <a name="anchor-extra-materials"></a>
+## Extra Materials <a name="anchor-extra-materials"></a> [click to go back to data transformations](#anchor-data-transformation)
 DAX measures and calculated columns used for this project:
 
 - To add column with days in the week, expressed as numbers 1-7 (mon-sun)
