@@ -30,6 +30,8 @@ Note from LAPD website:
 <br><br>
 
 ## Data Sourcing
+[> back to table of contents](#table-of-contents)
+
 The data used for this analysis has been directly downloaded from the City of Los Angeles Police Department Governmental [website](https://data.lacity.org/Public-Safety/Crime-Data-from-2020-to-Present/2nrs-mtv8/about_data)
 
 > Data last updated: April 30, 2025
@@ -37,6 +39,8 @@ The data used for this analysis has been directly downloaded from the City of Lo
 <br><br>
 
 ## Problem Statements
+[> back to table of contents](#table-of-contents)
+
 **Nine statements** or questions have been formulated to solve within this dataset. 
 1. Analyze victim age, sex, and most common area for different types of crime.
 2. Identify the most common types of weapons used.
@@ -62,6 +66,7 @@ The data used for this analysis has been directly downloaded from the City of Lo
 <br><br>
 
 ## Data Cleaning & Transformation <a name="anchor-data-cleaning-transformation"></a>
+[> back to table of contents](#table-of-contents)
 
 - Link to SQL file with cleaning queries: [SQL File](MySQL-Projects/Data%20Cleaning/LAPD_data_cleaning.sql)
 - Link to file with all DAX measure and calculated column formulas used for this project: [DAX File](PowerBI-Projects/dax_and_columns)
@@ -78,6 +83,8 @@ One simple many to one (* > 1) data model was used to create the mo-code analysi
 <br><br>
 
 ## Skills Demonstrated
+[> back to table of contents](#table-of-contents)
+
 #### MySQL
 - Data Cleaning (standardization, outlier removal)
 - Exploratory Data Analysis
@@ -91,6 +98,8 @@ One simple many to one (* > 1) data model was used to create the mo-code analysi
 <br><br>
 
 ## Visualizations
+[> back to table of contents](#table-of-contents)
+
 Note: each slide includes a filter function to select specifics year(s) to highlight and investigate
 
 ### Slide 1: A General Analysis
@@ -178,6 +187,8 @@ Note: please see analysis to see why weapon type 'description missing' is import
 <br><br>
 
 ## Analysis & Conclusions
+[> back to table of contents](#table-of-contents)
+
 For the Analysis and Conclusions, I will answer the nine statements formulated in the problem statement with the help of the visuals above. Each section starts with one problem statement and follows with my analysis and conclusion in regard to the statement.
 
 <br><br>
@@ -364,6 +375,8 @@ A significant portion of crimes remain unresolved. Here's a breakdown of resolut
 <br><br>
 
 ## Recommendations & Future Research
+[> back to table of contents](#table-of-contents)
+
 This section outlines promising directions for extending the analysis of LAPD crime data. These recommendations focus on deepening the understanding of crime patterns, improving contextual interpretation, and enhancing the dataset's value through complementary data sources.
 
 **Weapon & Violence Analysis**
@@ -409,6 +422,8 @@ This section outlines promising directions for extending the analysis of LAPD cr
 <br><br>
 
 ## Extra Materials <a name="anchor-extra-materials"></a> 
+[> back to table of contents](#table-of-contents)
+
 Click [here](#anchor-data-cleaning-transformation) to go back to data transformations
 
 **DAX measures and calculated columns used for this project:**
