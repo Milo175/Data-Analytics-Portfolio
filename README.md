@@ -8,7 +8,7 @@ Note from LAPD website:
 > "This dataset reflects incidents of crime in the City of Los Angeles dating back to 2020. This data is transcribed from original crime reports that are typed on paper and therefore there may be some inaccuracies within the data. Some location fields with missing data are noted as (0°, 0°). Address fields are only provided to the nearest hundred block in order to maintain privacy. This data is as accurate as the data in the database. Please note questions or concerns in the comments."
 
 ## Problem Statements
-Nine statements or questions have been formulated to solve within this dataset. 
+**Nine statements** or questions have been formulated to solve within this dataset. 
 1. Analyze victim age, sex, and most common area for different types of crime.
 2. Identify the most common types of weapons used.
     - Does this differ per crime type?
@@ -56,7 +56,8 @@ Link to SQL file: [link](MySQL-Projects/Data%20Cleaning/LAPD_data_cleaning.sql)
 
 **Data Transformation**
 Link to file with all DAX measure and calculated column formulas used for this project: [link](PowerBI-Projects/dax_and_columns)
-Or click here to scroll to the extra material page in this ReadMe file to view them in a clear overview [link](#anchor-extra-materials)
+
+**Or** click here to scroll to the extra material page in this ReadMe file to view them in a clear overview [link](#anchor-extra-materials)
 
 ## Data Modeling 
 One simple many to one (* > 1) data model was used to create the mo-code analysis page. For this page, I exported a table including each individual mo-code from each individual crime scene plus their count. I downloaded the mo-codes plus description from the LAPD website, and modeled them together to add the description to my own table. 
@@ -71,6 +72,8 @@ One simple many to one (* > 1) data model was used to create the mo-code analysi
 
 
 ## Extra Materials <a name="anchor-extra-materials"></a>
+DAX measures and calculated columns used for this project:
+
 - To add column with days in the week, expressed as numbers 1-7 (mon-sun)
 
 ![](PowerBI-Projects/dax_and_columns/0day_of_week.png)
