@@ -77,11 +77,11 @@ One simple many to one (* > 1) data model was used to create the mo-code analysi
 <br><br>
 
 ## Skills Demonstrated
-### MySQL
+#### MySQL
 - Data Cleaning (standardization, outlier removal)
 - Exploratory Data Analysis
 
-## Microsoft Power BI
+#### Microsoft Power BI
 - Data Transformation & Modeling 
 - Hierarchy & Relationship Design
 - DAX Measures & Calculated Columns
