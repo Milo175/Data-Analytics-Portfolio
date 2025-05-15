@@ -4,7 +4,7 @@
 
 <br><br>
 
-## Table of Contents
+## Table of Contents <a name="table-of-contents"></a>
 
 - [Introduction](#introduction)
 - [Data Sourcing](#data-sourcing)
@@ -20,6 +20,8 @@
 <br><br>
 
 ## Introduction
+[> back to table of contents](#table-of-contents)
+
 Welcome to my first official GitHub ReadMe file! My name is Milo, and I am currently in the process of educating myself in the field of Data Analytics to make it my full-time profession. For this project, I decided to analyze the crime data in the City of Los Angeles from 2020 until 2025. The data of 2024 and 2025 is incomplete in this dataset, but I decided to still use the data, since the personal practice outweighs the data usability. 
 
 Note from LAPD website:
