@@ -239,39 +239,9 @@ WHERE cross_street_name != ''
 GROUP BY street_name, cross_street_name
 ORDER BY COUNT(*) DESC
 
-;
-#23 calculate increase in overall crimes committed per area between 2023 and 2020 to determine highest increase over 3 years
-SELECT
-	year_2020,
-    area_2020,
-    count_area_2020,
-    year_2023,
-    area_2023,
-    count_area_2023,
-    (count_area_2023 - count_area_2020) / count_area_2020 * 100 AS difference
-FROM (
-	SELECT
-    `AREA NAME` AS area_2020,
-    YEAR(STR_TO_DATE(`DATE OCC`, '%m/%d/%Y')) AS year_2020,
-    COUNT(*) AS count_area_2020
-    FROM crime_data_from_2020_to_present
-    WHERE YEAR(STR_TO_DATE(`DATE OCC`, '%m/%d/%Y')) = 2020
-    GROUP BY `AREA NAME`, year_2020
-    ) AS sub1
-LEFT JOIN (
-	SELECT
-    `AREA NAME` AS area_2023,
-    YEAR(STR_TO_DATE(`DATE OCC`, '%m/%d/%Y')) AS year_2023,
-    COUNT(*) AS count_area_2023
-    FROM crime_data_from_2020_to_present
-    WHERE YEAR(STR_TO_DATE(`DATE OCC`, '%m/%d/%Y')) = 2023
-    GROUP BY `AREA NAME`, year_2023
-    ) AS sub2
-ON sub1.area_2020 = sub2.area_2023
-ORDER BY difference DESC
 
 ;
-#24 types of crimes with highest percentage of unresolved cases compared to total amount of cases
+#23 types of crimes with highest percentage of unresolved cases compared to total amount of cases
 SELECT
 	t1.`Crm Cd Desc` AS crime_one,
     t1.status,
