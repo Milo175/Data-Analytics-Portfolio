@@ -176,8 +176,11 @@ Note: please see analysis to see why weapon type 'description missing' is import
 <br><br>
 
 ## Analysis & Conclusions
+For the Analysis and Conclusions, I will answer the nine statements formulated in the problem statement with the help of the visuals above. Each section starts with one problem statement and follows with my analysis and conclusion in regard to the statement.
 
-**1. Victim Demographics and Crime Locations**
+<br><br>
+
+**1. Analyze victim age, sex, and most common area for different types of crime.**
 We examined the top five most common crime types and analyzed victim age, sex, and the most frequent reporting districts:
 
 | Crime Type               | Total Cases | Avg. Victim Age | Most Common Area | Male   | Female | Other/Unknown |
@@ -194,7 +197,10 @@ We examined the top five most common crime types and analyzed victim age, sex, a
 - Gender distribution varies per crime, with some (e.g. vehicle theft) having large amounts of unspecified gender data.
 - In 2024–2025, cases with unspecified gender increased significantly—interpret data from these years with caution due to dataset incompleteness.
 
-**2. Weapon Types and Their Use by Crime**
+<br><br>
+
+**2. Identify the most common types of weapons used**
+    - Does this differ per crime type?
    
 | Weapon Type         | Total   | Avg. Age | Top Area      | Male   | Female | Other/Unknown |
 |---------------------|---------|----------|---------------|--------|--------|----------------|
@@ -213,8 +219,12 @@ We examined the top five most common crime types and analyzed victim age, sex, a
 
 **Note**: Over 678K incidents lack weapon description. This represents a significant gap in reporting and may affect long-term trend analysis unless addressed in future datasets.
 
+<br><br>
+
 **3. Crime Trends Over Time and by Day**
-   
+    - Compare crime patterns during COVID lockdowns (2020–2021) vs. post-lockdown.
+    - Do crime rates differ per day of week?
+
 | Year | Reported Crimes |
 |------|-----------------|
 | 2020 | ~200,000        |
@@ -228,7 +238,10 @@ Day of the Week Patterns (2020–2023):
 - **Tuesday** consistently records the fewest crimes.
 - Patterns remained stable over the years.
 
-**4. Time-of-Day Crime Patterns**
+<br><br>
+
+**4. What time in the day are most crimes committed?**
+    - Break it down by crime type (e.g., assaults at night vs. thefts in the morning).  
 There is a **suspicious spike at 12:00** in nearly all crimes. This may indicate default administrative inputs when the actual time is unknown and should be investigated further.
 
 **General Trend:**
@@ -240,6 +253,8 @@ There is a **suspicious spike at 12:00** in nearly all crimes. This may indicate
 - **Burglary from Vehicle**: Spikes between **17:00–00:00**.
 - **Theft of Identity**: Sharp spikes at **00:00 and 12:00**—requires further investigation.
 - **Vandalism / Assault with Deadly Weapon**: Matches the general trend; peak at **21:00**, drop-off after **2:00**.
+
+<br><br>
 
 **5. Crime Hotspots (Heatmap) + Demographic Differences**
 **Top High-Crime Areas (by Reporting Division):**
@@ -266,6 +281,8 @@ note: The overall increase in crime between 2020 and 2023 was **21.8%**
 - **Asian**: Concentrated in Olympic, Central, West LA.
 - **Other / Unknown**: Evenly spread; unknown descent data too broad for clear conclusions.
 
+<br><br>
+
 **6. Most Dangerous Streets and Intersections**
 **Streets with Highest Crime Totals**:
 - 6th Street
@@ -281,6 +298,7 @@ note: 6th and 7th both report more than double the incidents of Figueroa
 | 7th St & Figueroa    | 244              |
 | 6th St & San Pedro   | 229              |
 
+<br><br>
 
 **7. Crime Targeting by Demographic Group**
 Disproportionate Victimization Patterns:
@@ -292,6 +310,8 @@ Disproportionate Victimization Patterns:
 - **Unknown**: Vehicle Theft, Petty Theft from Vehicles/Stores
 
 note: Counts for **American Indian** and **Pacific Islander** groups were too low to draw statistically significant conclusions.
+
+<br><br>
 
 **8. Modus Operandi (MO Codes) Trends**
 **Most common MO Codes:**
@@ -305,6 +325,8 @@ note: Counts for **American Indian** and **Pacific Islander** groups were too lo
 | 416     | Hit w/ Weapon             | 112,000 |
 
 These patterns have remained stable over the years.
+
+<br><br>
 
 **9. Case Statuses: IC (Investigation Complete) and Resolution Trends**
 A significant portion of crimes remain unresolved. Here's a breakdown of resolution percentages:
