@@ -181,3 +181,114 @@ FROM (
 GROUP BY new_date, mocode
 
 ;
+#19 clean street names - ending in TH become TH ST
+UPDATE crime_data_from_2020_to_present
+SET street_name = REGEXP_REPLACE(street_name, 'TH$', 'TH ST')
+WHERE street_name REGEXP 'TH$'
+
+;
+#20 which street intersections have the highest count of crimes commited
+SELECT 
+	street_name,
+    cross_street_name,
+    COUNT(*)
+FROM crime_data_from_2020_to_present
+WHERE cross_street_name != ''
+GROUP BY street_name, cross_street_name
+ORDER BY COUNT(*) DESC
+
+;
+#21 calculate increase in overall crimes committed per area between 2023 and 2020 to determine highest increase
+SELECT
+	year_2020,
+    area_2020,
+    count_area_2020,
+    year_2023,
+    area_2023,
+    count_area_2023,
+    (count_area_2023 - count_area_2020) / count_area_2020 * 100 AS difference
+FROM (
+	SELECT
+    `AREA NAME` AS area_2020,
+    YEAR(STR_TO_DATE(`DATE OCC`, '%m/%d/%Y')) AS year_2020,
+    COUNT(*) AS count_area_2020
+    FROM crime_data_from_2020_to_present
+    WHERE YEAR(STR_TO_DATE(`DATE OCC`, '%m/%d/%Y')) = 2020
+    GROUP BY `AREA NAME`, year_2020
+    ) AS sub1
+LEFT JOIN (
+	SELECT
+    `AREA NAME` AS area_2023,
+    YEAR(STR_TO_DATE(`DATE OCC`, '%m/%d/%Y')) AS year_2023,
+    COUNT(*) AS count_area_2023
+    FROM crime_data_from_2020_to_present
+    WHERE YEAR(STR_TO_DATE(`DATE OCC`, '%m/%d/%Y')) = 2023
+    GROUP BY `AREA NAME`, year_2023
+    ) AS sub2
+ON sub1.area_2020 = sub2.area_2023
+ORDER BY difference DESC
+
+;
+#22 which street intersections have the highest count of crimes committed
+SELECT 
+	street_name,
+    cross_street_name,
+    COUNT(*)
+FROM crime_data_from_2020_to_present
+WHERE cross_street_name != ''
+GROUP BY street_name, cross_street_name
+ORDER BY COUNT(*) DESC
+
+;
+#23 calculate increase in overall crimes committed per area between 2023 and 2020 to determine highest increase over 3 years
+SELECT
+	year_2020,
+    area_2020,
+    count_area_2020,
+    year_2023,
+    area_2023,
+    count_area_2023,
+    (count_area_2023 - count_area_2020) / count_area_2020 * 100 AS difference
+FROM (
+	SELECT
+    `AREA NAME` AS area_2020,
+    YEAR(STR_TO_DATE(`DATE OCC`, '%m/%d/%Y')) AS year_2020,
+    COUNT(*) AS count_area_2020
+    FROM crime_data_from_2020_to_present
+    WHERE YEAR(STR_TO_DATE(`DATE OCC`, '%m/%d/%Y')) = 2020
+    GROUP BY `AREA NAME`, year_2020
+    ) AS sub1
+LEFT JOIN (
+	SELECT
+    `AREA NAME` AS area_2023,
+    YEAR(STR_TO_DATE(`DATE OCC`, '%m/%d/%Y')) AS year_2023,
+    COUNT(*) AS count_area_2023
+    FROM crime_data_from_2020_to_present
+    WHERE YEAR(STR_TO_DATE(`DATE OCC`, '%m/%d/%Y')) = 2023
+    GROUP BY `AREA NAME`, year_2023
+    ) AS sub2
+ON sub1.area_2020 = sub2.area_2023
+ORDER BY difference DESC
+
+;
+#24 types of crimes with highest percentage of unresolved cases compared to total amount of cases
+SELECT
+	t1.`Crm Cd Desc` AS crime_one,
+    t1.status,
+    COUNT(t1.status) AS count_ic,
+    t2.count_total,
+    ROUND(COUNT(t1.status) / t2.count_total * 100, 2) AS percent_ic
+FROM crime_data_from_2020_to_present AS t1
+LEFT JOIN (
+	SELECT
+		`Crm Cd Desc` AS crime_two,
+        COUNT(*) AS count_total
+	FROM crime_data_from_2020_to_present
+    GROUP BY `Crm Cd Desc`
+) as t2
+ON t1.`Crm Cd Desc` = t2.crime_two
+WHERE status = 'IC'
+AND count_total >= 50000
+GROUP BY crime_one, t1.status, t2.count_total
+ORDER BY percent_ic DESC
+;
