@@ -51,14 +51,38 @@ The data used for this analysis has been directly downloaded from the City of Lo
 
 ## Data Cleaning & Transformation
 **Data Cleaning**
-Link to SQL file: [link](MySQL-Projects/Data Cleaning/LAPD_data_cleaning.sql)
+Link to SQL file: [link](MySQL-Projects/Data%20Cleaning/LAPD_data_cleaning.sql)
 
 **Data Transformation**
-DAX measure formulas used:
+DAX measure and calculated column formulas used:
+To add column with days in the week, expressed as numbers 1-7 (mon-sun)
+![](PowerBI-Projects/dax_and_columns/0day_of_week.png)
 
+To add column with days in week, expressed in words instead of numbers
+![](PowerBI-Projects/dax_and_columns/0day_week_written.png)
+
+To add a measure to calculate the area with the most amount of crimes for the card visual on page one
+![](PowerBI-Projects/dax_and_columns/0frequent_area.png)
+
+To change value "UNK" to "Unknown" within 'status' column to improve readability of visualisation on case statuses
+![](PowerBI-Projects/dax_and_columns/0status_description_written.png)
+
+To find the streets with street intersections
+![](PowerBI-Projects/dax_and_columns/0street_name_with_cross.png)
+
+To categorise the victim descents to improve readability of visualisation on descent versus area of crime
+![](PowerBI-Projects/dax_and_columns/0vict_descent_categorized.png)
+
+To write out the known descents of victims in full, instead of using the letter-code
+![](PowerBI-Projects/dax_and_columns/0vict_descent_desc.png)
+
+To write out the known genders of victims in full, instead of using the letter-code
+![](PowerBI-Projects/dax_and_columns/0vict_sex_desc.png)
 
 ## Data Modeling 
 One simple many to one (* > 1) data model was used to create the mo-code analysis page. For this page, I exported a table including each individual mo-code from each individual crime scene plus their count. I downloaded the mo-codes plus description from the LAPD website, and modeled them together to add the description to my own table. 
+
+![](PowerBI-Projects/dax_and_columns/0data_model.png)
 
 ## Visualizations & Analysis
 
