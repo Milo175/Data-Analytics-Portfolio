@@ -221,7 +221,7 @@ We examined the top five most common crime types and analyzed victim age, sex, a
 
 <br><br>
 
-**3. Crime Trends Over Time and by Day**
+**3. How have crime rates evolved year-over-year**
     - Compare crime patterns during COVID lockdowns (2020–2021) vs. post-lockdown.
     - Do crime rates differ per day of week?
 
@@ -241,7 +241,8 @@ Day of the Week Patterns (2020–2023):
 <br><br>
 
 **4. What time in the day are most crimes committed?**
-    - Break it down by crime type (e.g., assaults at night vs. thefts in the morning).  
+    - Break it down by crime type (e.g., assaults at night vs. thefts in the morning). 
+
 There is a **suspicious spike at 12:00** in nearly all crimes. This may indicate default administrative inputs when the actual time is unknown and should be investigated further.
 
 **General Trend:**
@@ -256,7 +257,11 @@ There is a **suspicious spike at 12:00** in nearly all crimes. This may indicate
 
 <br><br>
 
-**5. Crime Hotspots (Heatmap) + Demographic Differences**
+**5. Use LAT and LON coordinates to create a heatmap of high-crime zones within the City of Los Angeles**
+    - What are the high-crime zones in the City of Los Angeles?
+    - Break it down by victim decent to find differences in high-crime zones per decent
+
+
 **Top High-Crime Areas (by Reporting Division):**
 1. Central
 2. 77th Street
@@ -272,7 +277,7 @@ There is a **suspicious spike at 12:00** in nearly all crimes. This may indicate
 | Rampart             | +27.8%              |
 | Wilshire            | +26.1%              |
 
-note: The overall increase in crime between 2020 and 2023 was **21.8%**
+Note: The overall increase in crime between 2020 and 2023 was **21.8%**
 
 **Demographic Heatmap Patterns:**
 - **Hispanic**: Most common in Mission, Newton, 77th Street, Hollenbeck.
@@ -283,13 +288,16 @@ note: The overall increase in crime between 2020 and 2023 was **21.8%**
 
 <br><br>
 
-**6. Most Dangerous Streets and Intersections**
+**6. Rank areas by frequency or severity of crimes**
+    - Determine the most dangerous streets
+    - Also determine the most dangerous intersections
+
 **Streets with Highest Crime Totals**:
 - 6th Street
 - 7th Street
 - Figueroa Street
   
-note: 6th and 7th both report more than double the incidents of Figueroa
+note: 6th and 7th street both report more than double the incidents of Figueroa
 
 **Top 3 Intersections**:
 | Intersection         | Reported Crimes |
@@ -300,8 +308,10 @@ note: 6th and 7th both report more than double the incidents of Figueroa
 
 <br><br>
 
-**7. Crime Targeting by Demographic Group**
-Disproportionate Victimization Patterns:
+**7. Are certain crimes (e.g., robbery, assault) more prevalent against specific groups?**
+    - Also identify whether specific groups are disproportionately targeted in certain areas
+    
+**Disproportionate Victimization Patterns:**
 - **Hispanic**: Battery, Assault w/ Deadly Weapon, Intimate Partner Assault
 - **Black**: Battery, Assault w/ Deadly Weapon, Theft of Identity
 - **White**: Burglary, Identity Theft
@@ -309,11 +319,12 @@ Disproportionate Victimization Patterns:
 - **Other**: Burglary, Vandalism
 - **Unknown**: Vehicle Theft, Petty Theft from Vehicles/Stores
 
-note: Counts for **American Indian** and **Pacific Islander** groups were too low to draw statistically significant conclusions.
+Note: Counts for **American Indian** and **Pacific Islander** groups were too low to draw statistically significant conclusions.
 
 <br><br>
 
-**8. Modus Operandi (MO Codes) Trends**
+**8. Extract and visualize trends from Mocodes to see popular tactics or criminal behavior**
+
 **Most common MO Codes:**
 
 | MO Code | Description               | Count   |
@@ -328,7 +339,10 @@ These patterns have remained stable over the years.
 
 <br><br>
 
-**9. Case Statuses: IC (Investigation Complete) and Resolution Trends**
+**9. What percentage of crimes have an "IC" (investigation complete) or other statuses?**
+    - Which types of crimes are most likely to remain unresolved?
+    - Calculate by total count per crimes and percentage of crimes status IC versus all statuses
+
 A significant portion of crimes remain unresolved. Here's a breakdown of resolution percentages:
 
 | Crime Type                    | IC Cases | Total Cases | % Resolved (IC) |
