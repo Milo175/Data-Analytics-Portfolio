@@ -69,25 +69,25 @@ One simple many to one (* > 1) data model was used to create the mo-code analysi
 ## Visualizations & Analysis
 Note: each slide includes a filter function to select specifics year(s) to highlight and investigate
 
-### **Slide 1: A General Analysis, including total crimes committed, most dangerous area, average age of victims, gender distribution, and most common weapons used by criminals**
+### Slide 1: A General Analysis
 
 ![](PowerBI-Projects/Page%201.png)
 
-### **Slide 2: A bar chart with drill function to analyse the weapons used per crime type - description missing *included***
+### Slide 2: A bar chart with drill function to analyse common weapons used - description missing *included*
 Note: please see analysis to see why weapon type 'description missing' is important to include and/or exclude
 
 ![](PowerBI-Projects/Page%202.png)
 
-### **Slide 3: A bar chart with drill function to analyse the weapons used per crime type - description missing *excluded***
+### Slide 3: A bar chart with drill function to analyse common weapons used - description missing *excluded*
 Note: please see analysis to see why weapon type 'description missing' is important to include and/or exclude
 
 ![](PowerBI-Projects/Page%202.1.png)
 
-### **Slide 4: An example of drill down into the crime type 'Robbery' to view most common weapons used**
+### Slide 4: Drill down into the crime type 'Robbery' to view most common weapons used during robberies
 
 ![](PowerBI-Projects/Page%202.2.png)
 
-### Slide 5: An overview of Crimes Committed over the past 6 years and a bar chart showcasing the occurrence of crimes per specific day of the week
+### Slide 5: Overview of crimes committed year-to-year and a bar chart to show trend in crimes per weekday
 
 ![](PowerBI-Projects/Page%203.png)
 
@@ -111,43 +111,43 @@ Note: please see analysis to see why weapon type 'description missing' is import
 
 ![](PowerBI-Projects/Page%204.4.png)
 
-### Slide 11: A heatmap highlighting the areas where most crimes occur in Los Angeles - filter victim descent: *'Hispanic'* chosen for demonstrating purposes 
+### Slide 11: A heatmap highlighting high crime areas in Los Angeles - filter set to *'Hispanic'* victim descent
 
 ![](PowerBI-Projects/Page%205.png)
 
-### Slide 12: A bar chart highlighting only the streets with most crimes happening on intersections - with drill function to dive into each street individually 
+### Slide 12: A bar chart highlighting crime count on streets with intersections - including drill function to view each street individually 
 
 ![](PowerBI-Projects/Page%206.png)
 
-### Slide 13: A bar chart highlighting only the streets with most crimes happening on intersections - with drill function set to *'6TH ST'* for demonstrating purposes 
+### Slide 13: Drill function set to *'6TH ST'* for demonstrating purposes 
 
 ![](PowerBI-Projects/Page%206.1.png)
 
-### Slide 14: An overview of the victim descent and area names of crimes committed - graph on the right has a drill function to view victim descent type per specific area 
+### Slide 14: An overview of the victim descent and area names of crimes committed - right graph includes drill function for victim descent type per area 
 
 ![](PowerBI-Projects/Page%207.png)
 
-### Slide 15: An overview of the victim descent and area names of crimes committed - drill function set to *'Central'* area for demonstrating purposes
+### Slide 15: Drill function set to *'Central'* area for demonstrating purposes
 
 ![](PowerBI-Projects/Page%207.1.png)
 
-### Slide 16: An overview of the victim descent and area names of crimes committed - the left graph has selected victim descent type *'Black'* as a filter
+### Slide 16: Left graph has victim descent type *'Black'* selected as a filter
 
 ![](PowerBI-Projects/Page%207.2.png)
 
-### Slide 17: A bar chart highlighting distribution of victim descent - with drill function to view most common crimes each descent is targetted for
+### Slide 17: A bar chart showing distribution of victim descent - with drill function to view most common crimes each descent is targetted for
 
 ![](PowerBI-Projects/Page%208.png)
 
-### Slide 18: A bar chart highlighting distribution of victim descent - with drill function set to victim descent *'Hispanic'* for demonstrating purposes
+### Slide 18: Drill function set to victim descent *'Hispanic'* 
 
 ![](PowerBI-Projects/Page%208.1.png)
 
-### **Slide 19: A treemap of the most commonly used Modus Operandi (mo's) by criminals - slide filter included to select least to most common
+### **Slide 19: A treemap with most commonly used Modus Operandi (mo's) by criminals - slide filter included to select least to most common
 
 ![](PowerBI-Projects/Page%209.png)
 
-### **Slide 20: An overview of the case statuses, the distribution of statuses over all cases per year and the most common cases with a CI (continued investigation) status
+### **Slide 20: An overview of the case statuses showing the distribution of statuses versus total cases and the most common types of crimes with a CI (continued investigation) status
 
 ![](PowerBI-Projects/Page%2010.png)
 
