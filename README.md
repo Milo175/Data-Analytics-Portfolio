@@ -70,8 +70,7 @@ One simple many to one (* > 1) data model was used to create the mo-code analysi
 ## Recommendations
 
 
-## Extra Materials
-<a name="anchor-extra-materials"></a>
+## Extra Materials <a name="anchor-extra-materials"></a>
 - To add column with days in the week, expressed as numbers 1-7 (mon-sun)
 
 ![](PowerBI-Projects/dax_and_columns/0day_of_week.png)
