@@ -7,6 +7,8 @@ Welcome to my first official GitHub ReadMe file! My name is Milo, and I am curre
 Note from LAPD website:
 > "This dataset reflects incidents of crime in the City of Los Angeles dating back to 2020. This data is transcribed from original crime reports that are typed on paper and therefore there may be some inaccuracies within the data. Some location fields with missing data are noted as (0°, 0°). Address fields are only provided to the nearest hundred block in order to maintain privacy. This data is as accurate as the data in the database. Please note questions or concerns in the comments."
 
+<br><br>
+
 ## Problem Statements
 **Nine statements** or questions have been formulated to solve within this dataset. 
 1. Analyze victim age, sex, and most common area for different types of crime.
@@ -30,6 +32,8 @@ Note from LAPD website:
     - Which types of crimes are most likely to remain unresolved?
     - Calculate by total count per crimes and percentage of crimes status IC versus all statuses
 
+<br><br>
+
 ## Skills Demonstrated
 **MySQL** 
 - Data Cleaning
@@ -48,11 +52,14 @@ Note from LAPD website:
     - Filters
     - Data Drilling
 
+<br><br>
+
 ## Data Sourcing
 The data used for this analysis has been directly downloaded from the City of Los Angeles Police Department Governmental [website](https://data.lacity.org/Public-Safety/Crime-Data-from-2020-to-Present/2nrs-mtv8/about_data)
 
 > Data last updated: April 30, 2025
 
+<br><br>
 
 ## Data Cleaning & Transformation <a name="anchor-data-cleaning-transformation"></a>
 **Data Cleaning**
@@ -62,10 +69,14 @@ The data used for this analysis has been directly downloaded from the City of Lo
 - Link to file with all DAX measure and calculated column formulas used for this project: [link](PowerBI-Projects/dax_and_columns)
 - Or click [here](#anchor-extra-materials) to scroll to the extra material page in this ReadMe file to view them in a clear overview 
 
+<br><br>
+
 ## Data Modeling 
 One simple many to one (* > 1) data model was used to create the mo-code analysis page. For this page, I exported a table including each individual mo-code from each individual crime scene plus their count. I downloaded the mo-codes plus description from the LAPD website, and modeled them together to add the description to my own table. 
 
 ![](PowerBI-Projects/dax_and_columns/0data_model.png)
+
+<br><br>
 
 ## Visualizations
 Note: each slide includes a filter function to select specifics year(s) to highlight and investigate
@@ -152,6 +163,7 @@ Note: please see analysis to see why weapon type 'description missing' is import
 
 ![](PowerBI-Projects/Page%2010.png)
 
+<br><br>
 
 ## Analysis & Conclusions
 
@@ -301,8 +313,52 @@ A significant portion of crimes remain unresolved. Here's a breakdown of resolut
 **Trend:**
 “IC” cases increased slightly over time, but arrests (Adult Arrest - AA, Adult Other - AO) decreased, possibly pointing to decreased enforcement or efficiency.
 
-## Recommendations
+<br><br>
 
+## Recommendations
+This section outlines promising directions for extending the analysis of LAPD crime data. These recommendations focus on deepening the understanding of crime patterns, improving contextual interpretation, and enhancing the dataset's value through complementary data sources.
+
+**Weapon & Violence Analysis**
+- Identify weapons most associated with violent crimes (e.g., assault, homicide, robbery).
+- Analyze trends in weapon usage over time — are guns becoming more prevalent? Are bladed weapons declining?
+- Investigate the relationship between weapon type and resolution rate (e.g., are crimes involving firearms solved more or less often?).
+
+**Demographic Fairness & Representation**
+- Compare crime victim data by descent to the actual population distribution by area. Helps assess disproportional targeting or exposure.
+- Cross-reference with census data to get victims per capita metrics for each descent group.
+- Check statistical validity of findings for underrepresented groups (e.g., Islanders, Native Americans, Alaskans) — assess if sample sizes are large enough to draw meaningful conclusions.
+
+**Behavioral & Pattern Analysis**
+- Analyze MO (Modus Operandi) code combinations to detect repeated strategies, behavioral patterns, or organized criminal activity.
+- Study co-occurrence patterns among crime types — e.g., is burglary often reported alongside trespassing or vandalism?
+
+**Police Division Performance**
+- Compare clearance/resolution rates across LAPD divisions.
+- Note: Requires mapping Reporting District numbers to LAPD Division names (one division typically spans multiple districts).
+- Investigate whether certain types of crimes are consistently better resolved in some divisions.
+
+**Severity Index**
+- Create a crime severity index based on the hierarchy or seriousness of crime codes.
+- Use this index to:
+    - Map severity trends geographically
+    - Track changes over time
+    - Compare severity scores between areas and police districts
+
+**Crime Location & Environment**
+- Use the Premise Description column to categorize crime locations (e.g., public streets, private homes, parking structures).
+- Show proportions of crimes in public vs. private spaces.
+- Analyze whether certain crimes are more prevalent in specific locations at particular times (e.g., home burglaries at night).
+
+**Time-Based Anomalies**
+- Investigate the 12:00 PM peak in reported crime times.
+- Is this a default or placeholder time for unknown incident hours?
+- Consider cleaning or flagging this for temporal analysis.
+
+**Deep-Dive**
+- Socioeconomic indicators (income levels, housing, employment): May reveal systemic drivers of crime.
+- Police resources per division (number of officers, funding): Can be compared against resolution rate and crime volume.
+
+<br><br>
 
 ## Extra Materials <a name="anchor-extra-materials"></a> 
 Click [here](#anchor-data-cleaning-transformation) to go back to data transformations
