@@ -155,7 +155,7 @@ Note: please see analysis to see why weapon type 'description missing' is import
 
 ## Analysis & Conclusions
 
-1. Victim Demographics and Crime Locations
+**1. Victim Demographics and Crime Locations**
 We examined the top five most common crime types and analyzed victim age, sex, and the most frequent reporting districts:
 
 | Crime Type               | Total Cases | Avg. Victim Age | Most Common Area | Male   | Female | Other/Unknown |
@@ -166,17 +166,14 @@ We examined the top five most common crime types and analyzed victim age, sex, a
 | Theft of Identity        | 62,539      | 41.7             | 77th Street      | 25,800 | 35,800 | 918            |
 | Vandalism – Felony       | 61,093      | 41.3             | Central          | 28,000 | 21,400 | 11,700         |
 
-Key Insights:
+**Key Insights:**
+- The average victim age ranges from 38 to 42 years.
+- Crime locations are most frequently reported in 77th Street and Central divisions.
+- Gender distribution varies per crime, with some (e.g. vehicle theft) having large amounts of unspecified gender data.
+- In 2024–2025, cases with unspecified gender increased significantly—interpret data from these years with caution due to dataset incompleteness.
 
-The average victim age ranges from 38 to 42 years.
-
-Crime locations are most frequently reported in 77th Street and Central divisions.
-
-Gender distribution varies per crime, with some (e.g. vehicle theft) having large amounts of unspecified gender data.
-
-In 2024–2025, cases with unspecified gender increased significantly—interpret data from these years with caution due to dataset incompleteness.
-
-2. Weapon Types and Their Use by Crime
+**2. Weapon Types and Their Use by Crime**
+   
 | Weapon Type         | Total   | Avg. Age | Top Area      | Male   | Female | Other/Unknown |
 |---------------------|---------|----------|---------------|--------|--------|----------------|
 | Strong Arm (No Weapon) | 174,770 | 36.6     | 77th Street    | 69,000 | 99,000 | 6,200          |
@@ -184,23 +181,18 @@ In 2024–2025, cases with unspecified gender increased significantly—interpre
 | Verbal Threat          | 23,850  | 39.6     | 77th Street    | 11,000 | 11,500 | 1,300          |
 | Handgun                | 20,180  | 34.5     | 77th Street    | 13,600 | 4,700  | 1,900          |
 
-Weapon Type Breakdown by Crime:
+**Weapon Type Breakdown by Crime**:
+- **Vehicle Stolen**: Weapon not described in 115K cases; next most common is Strong Arm (23 cases).
+- **Battery – Simple Assault**: Strong Arm (67.5K) is by far the most common.
+- **Burglary from Vehicle**: Mostly lacks weapon description (~60K).
+- **Assault with Deadly Weapon**: Handgun (7.7K) and Strong Arm (7.1K) dominate.
+- **Robbery**: Strong Arm (14K) and Handgun (5.9K) are most used.
+- **Intimate Partner – Simple Assault**: Strong Arm (44K), then Unknown (2K).
 
-Vehicle Stolen: Weapon not described in 115K cases; next most common is Strong Arm (23 cases).
+**Note**: Over 678K incidents lack weapon description. This represents a significant gap in reporting and may affect long-term trend analysis unless addressed in future datasets.
 
-Battery – Simple Assault: Strong Arm (67.5K) is by far the most common.
-
-Burglary from Vehicle: Mostly lacks weapon description (~60K).
-
-Assault with Deadly Weapon: Handgun (7.7K) and Strong Arm (7.1K) dominate.
-
-Robbery: Strong Arm (14K) and Handgun (5.9K) are most used.
-
-Intimate Partner – Simple Assault: Strong Arm (44K), then Unknown (2K).
-
-Note: Over 678K incidents lack weapon description. This represents a significant gap in reporting and may affect long-term trend analysis unless addressed in future datasets.
-
-3. Crime Trends Over Time and by Day
+**3. Crime Trends Over Time and by Day**
+   
 | Year | Reported Crimes |
 |------|-----------------|
 | 2020 | ~200,000        |
@@ -208,76 +200,59 @@ Note: Over 678K incidents lack weapon description. This represents a significant
 | 2022 | ~235,000        |
 | 2023 | Slight decrease |
 
-
 Day of the Week Patterns (2020–2023):
+- **Friday** has the highest number of reported crimes (9% higher than Mon–Thu average).
+- **Saturday** ranks second.
+- **Tuesday** consistently records the fewest crimes.
+- Patterns remained stable over the years.
 
-Friday has the highest number of reported crimes (9% higher than Mon–Thu average).
+**4. Time-of-Day Crime Patterns**
+There is a **suspicious spike at 12:00** in nearly all crimes. This may indicate default administrative inputs when the actual time is unknown and should be investigated further.
 
-Saturday ranks second.
+**General Trend:**
+- Early morning rise starts around **5:00–7:00**, peaks from **16:00 to 21:00**, and tapers off overnight.
 
-Tuesday consistently records the fewest crimes.
+**By Crime Type:**
+- **Vehicle Stolen**: Peaks between **16:00–23:00**.
+- **Battery – Simple Assault**: Peaks between **9:00–00:00**, with smaller morning spikes.
+- **Burglary from Vehicle**: Spikes between **17:00–00:00**.
+- **Theft of Identity**: Sharp spikes at **00:00 and 12:00**—requires further investigation.
+- **Vandalism / Assault with Deadly Weapon**: Matches the general trend; peak at **21:00**, drop-off after **2:00**.
 
-Patterns remained stable over the years.
+**5. Crime Hotspots (Heatmap) + Demographic Differences**
+**Top High-Crime Areas (by Reporting Division):**
+1. Central
+2. 77th Street
+3. Pacific
+4. Southwest
+5. Hollywood
 
-4. Time-of-Day Crime Patterns
-There is a suspicious spike at 12:00 in nearly all crimes. This may indicate default administrative inputs when the actual time is unknown and should be investigated further.
+**Fastest Growth in Crime:**
 
-General Trend:
-Early morning rise starts around 5:00–7:00, peaks from 16:00 to 21:00, and tapers off overnight.
-
-By Crime Type:
-Vehicle Stolen: Peaks between 16:00–23:00.
-
-Battery – Simple Assault: Peaks between 9:00–00:00, with smaller morning spikes.
-
-Burglary from Vehicle: Spikes between 17:00–00:00.
-
-Theft of Identity: Sharp spikes at 00:00 and 12:00—requires further investigation.
-
-Vandalism / Assault with Deadly Weapon: Matches the general trend; peak at 21:00, drop-off after 2:00.
-
-5. Crime Hotspots (Heatmap) + Demographic Differences
-Top High-Crime Areas (by Reporting Division):
-Central
-
-77th Street
-
-Pacific
-
-Southwest
-
-Hollywood
-
-Fastest Growth in Crime:
 | Reporting Division | % Increase in Crime |
 |---------------------|---------------------|
 | Central             | +46.2%              |
 | Rampart             | +27.8%              |
 | Wilshire            | +26.1%              |
 
- note: the overall increase in crime between 2020 and 2023 was 21.8%
+note: The overall increase in crime between 2020 and 2023 was **21.8%**
 
-Demographic Heatmap Patterns:
-Hispanic: Most common in Mission, Newton, 77th Street, Hollenbeck.
+**Demographic Heatmap Patterns:**
+- **Hispanic**: Most common in Mission, Newton, 77th Street, Hollenbeck.
+- **White**: More active in Pacific, West LA, North Hollywood, Hollywood.
+- **Black**: Highest in 77th Street, Southwest, Southeast.
+- **Asian**: Concentrated in Olympic, Central, West LA.
+- **Other / Unknown**: Evenly spread; unknown descent data too broad for clear conclusions.
 
-White: More active in Pacific, West LA, North Hollywood, Hollywood.
+**6. Most Dangerous Streets and Intersections**
+**Streets with Highest Crime Totals**:
+- 6th Street
+- 7th Street
+- Figueroa Street
+  
+note: 6th and 7th both report more than double the incidents of Figueroa
 
-Black: Highest in 77th Street, Southwest, Southeast.
-
-Asian: Concentrated in Olympic, Central, West LA.
-
-Other / Unknown: Evenly spread; unknown descent data too broad for clear conclusions.
-
-6. Most Dangerous Streets and Intersections
-Streets with Highest Crime Totals:
-6th Street
-
-7th Street
-
-Figueroa Street
-(Note: 6th and 7th both report more than double the incidents of Figueroa)
-
-Top 3 Intersections:
+**Top 3 Intersections**:
 | Intersection         | Reported Crimes |
 |----------------------|------------------|
 | 5th St & San Pedro   | 284              |
@@ -285,24 +260,20 @@ Top 3 Intersections:
 | 6th St & San Pedro   | 229              |
 
 
-7. Crime Targeting by Demographic Group
+**7. Crime Targeting by Demographic Group**
 Disproportionate Victimization Patterns:
-Hispanic: Battery, Assault w/ Deadly Weapon, Intimate Partner Assault
+- **Hispanic**: Battery, Assault w/ Deadly Weapon, Intimate Partner Assault
+- **Black**: Battery, Assault w/ Deadly Weapon, Theft of Identity
+- **White**: Burglary, Identity Theft
+- **Asian**: Petty Theft, Identity Theft, Burglary from Vehicle
+- **Other**: Burglary, Vandalism
+- **Unknown**: Vehicle Theft, Petty Theft from Vehicles/Stores
 
-Black: Battery, Assault w/ Deadly Weapon, Theft of Identity
+note: Counts for **American Indian** and **Pacific Islander** groups were too low to draw statistically significant conclusions.
 
-White: Burglary, Identity Theft
+**8. Modus Operandi (MO Codes) Trends**
+**Most common MO Codes:**
 
-Asian: Petty Theft, Identity Theft, Burglary from Vehicle
-
-Other: Burglary, Vandalism
-
-Unknown: Vehicle Theft, Petty Theft from Vehicles/Stores
-
-Counts for American Indian and Pacific Islander groups were too low to draw statistically significant conclusions.
-
-8. Modus Operandi (MO Codes) Trends
-Most common MO Codes:
 | MO Code | Description               | Count   |
 |---------|---------------------------|---------|
 | 1822    | Stranger                  | 342,000 |
@@ -311,10 +282,9 @@ Most common MO Codes:
 | 329     | Vandalized                | 130,000 |
 | 416     | Hit w/ Weapon             | 112,000 |
 
-
 These patterns have remained stable over the years.
 
-9. Case Statuses: IC (Investigation Complete) and Resolution Trends
+**9. Case Statuses: IC (Investigation Complete) and Resolution Trends**
 A significant portion of crimes remain unresolved. Here's a breakdown of resolution percentages:
 
 | Crime Type                    | IC Cases | Total Cases | % Resolved (IC) |
@@ -328,7 +298,7 @@ A significant portion of crimes remain unresolved. Here's a breakdown of resolut
 | Battery – Simple Assault      | 49,822   | 74,842      | 66.6%            |
 | Assault w/ Deadly Weapon      | 32,295   | 53,528      | 60.3%            |
 
-Trend:
+**Trend:**
 “IC” cases increased slightly over time, but arrests (Adult Arrest - AA, Adult Other - AO) decreased, possibly pointing to decreased enforcement or efficiency.
 
 ## Recommendations
