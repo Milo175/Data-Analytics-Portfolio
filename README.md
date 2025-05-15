@@ -51,7 +51,7 @@ The data used for this analysis has been directly downloaded from the City of Lo
 
 ## Data Cleaning & Transformation
 **Data Cleaning**
-Link to SQL file: link
+Link to SQL file: [link](MySQL-Projects/Data Cleaning/LAPD_data_cleaning.sql)
 
 **Data Transformation**
 DAX measure formulas used:
