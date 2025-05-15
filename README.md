@@ -68,45 +68,92 @@ One simple many to one (* > 1) data model was used to create the mo-code analysi
 
 ## Visualizations & Analysis
 
+### **Slide 1: A General Analysis**
+
 ![](PowerBI-Projects/Page%201.png)
+
+### **Slide 2: A bar chart with drill function to analyse the weapons used per crime type - description missing *included***
 
 ![](PowerBI-Projects/Page%202.png)
 
+### **Slide 3: A bar chart with drill function to analyse the weapons used per crime type - description missing *excluded***
+
 ![](PowerBI-Projects/Page%202.1.png)
+
+### **Slide 4: An example of drill down into the crime type 'Robbery' to view most common weapons used**
 
 ![](PowerBI-Projects/Page%202.2.png)
 
+### **Slide 5: An overview of Crimes Committed over the past 6 years and a bar chart showcasing the occurrence of crimes per specific day of the week**
+
 ![](PowerBI-Projects/Page%203.png)
+
+### **Slide 6: A bar chart visualizing the number of crimes commmitted per hour of the day - filter crime type: *all* **
 
 ![](PowerBI-Projects/Page%204.png)
 
+### **Slide 7: A bar chart visualizing the number of crimes commmitted per hour of the day - filter crime type: *'Battery - Simple Assault'* **
+
 ![](PowerBI-Projects/Page%204.1.png)
+
+### **Slide 8: A bar chart visualizing the number of crimes commmitted per hour of the day - filter crime type: *'Intimate Partner - Simple Assault'* **
 
 ![](PowerBI-Projects/Page%204.2.png)
 
+### **Slide 9: A bar chart visualizing the number of crimes commmitted per hour of the day - filter crime type: *'Vehicle - Stolen'* **
+
 ![](PowerBI-Projects/Page%204.3.png)
+
+### **Slide 10: A bar chart visualizing the number of crimes commmitted per hour of the day - filter crime type: *'Theft of Identity'* **
 
 ![](PowerBI-Projects/Page%204.4.png)
 
+### **Slide 11: A heatmap highlighting the areas where most crimes occur in Los Angeles - filter victim descent: *'Hispanic'* chosen for demonstrating purposes **
+
 ![](PowerBI-Projects/Page%205.png)
+
+### **Slide 12: A bar chart highlighting only the streets with most crimes happening on intersections - with drill function to dive into each street individually **
 
 ![](PowerBI-Projects/Page%206.png)
 
+### **Slide 13: A bar chart highlighting only the streets with most crimes happening on intersections - with drill function set to *'6TH ST'* for demonstrating purposes **
+
 ![](PowerBI-Projects/Page%206.1.png)
+
+### **Slide 14: An overview of the victim descent and area names of crimes committed - graph on the right has a drill function to view victim descent type per specific area  **
 
 ![](PowerBI-Projects/Page%207.png)
 
+### **Slide 15: An overview of the victim descent and area names of crimes committed - drill function set to *'Central'* area for demonstrating purposes **
+
 ![](PowerBI-Projects/Page%207.1.png)
+
+### **Slide 16: An overview of the victim descent and area names of crimes committed - the left graph has selected victim descent type *'Black'* as a filter **
 
 ![](PowerBI-Projects/Page%207.2.png)
 
+### **Slide 17: An overview of Crimes Committed over the past 6 years and a bar chart showcasing the occurrence of crimes per specific day of the week**
+
+
 ![](PowerBI-Projects/Page%208.png)
+
+### **Slide 5: An overview of Crimes Committed over the past 6 years and a bar chart showcasing the occurrence of crimes per specific day of the week**
+
 
 ![](PowerBI-Projects/Page%208.1.png)
 
+### **Slide 5: An overview of Crimes Committed over the past 6 years and a bar chart showcasing the occurrence of crimes per specific day of the week**
+
+
 ![](PowerBI-Projects/Page%209.png)
 
+### **Slide 5: An overview of Crimes Committed over the past 6 years and a bar chart showcasing the occurrence of crimes per specific day of the week**
+
+
 ![](PowerBI-Projects/Page%2010.png)
+
+### **Slide 5: An overview of Crimes Committed over the past 6 years and a bar chart showcasing the occurrence of crimes per specific day of the week**
+
 
 ## Conclusions
 
