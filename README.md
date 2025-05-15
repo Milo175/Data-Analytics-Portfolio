@@ -1,11 +1,32 @@
 # Data-Analytics-Portfolio
 Los Angeles Police Department - Crime Statistics Analysis
 
+## Table of Contents
+
+- [Introduction](#introduction)
+- [Data Sourcing](#data-sourcing)
+- [Problem Statements](#problem-statements)
+- [Data Cleaning & Transformation](#data-cleaning--transformation)
+- [Data Modeling](#data-modeling)
+- [Skills Demonstrated](#skills-demonstrated)
+- [Visualizations](#visualizations)
+- [Analysis & Conclusions](#analysis--conclusions)
+- [Recommendations & Future Research](#recommendations--future-research)
+- [Extra Materials] (#extra-materials)
+
+
 ## Introduction
 Welcome to my first official GitHub ReadMe file! My name is Milo, and I am currently in the process of educating myself in the field of Data Analytics to make it my full-time profession. For this project, I decided to analyze the crime data in the City of Los Angeles from 2020 until 2025. The data of 2024 and 2025 is incomplete in this dataset, but I decided to still use the data, since the personal practice outweighs the data usability. 
 
 Note from LAPD website:
 > "This dataset reflects incidents of crime in the City of Los Angeles dating back to 2020. This data is transcribed from original crime reports that are typed on paper and therefore there may be some inaccuracies within the data. Some location fields with missing data are noted as (0°, 0°). Address fields are only provided to the nearest hundred block in order to maintain privacy. This data is as accurate as the data in the database. Please note questions or concerns in the comments."
+
+<br><br>
+
+## Data Sourcing
+The data used for this analysis has been directly downloaded from the City of Los Angeles Police Department Governmental [website](https://data.lacity.org/Public-Safety/Crime-Data-from-2020-to-Present/2nrs-mtv8/about_data)
+
+> Data last updated: April 30, 2025
 
 <br><br>
 
@@ -34,40 +55,12 @@ Note from LAPD website:
 
 <br><br>
 
-## Skills Demonstrated
-**MySQL** 
-- Data Cleaning
-- Standardization
-- Removing outliers
-- Data Analysis
-
-**Microsoft Power BI** 
-- Data Transformation
-- Data Modeling 
-- Data Modeling Hierarchy 
-- DAX Measure Calculations
-- New Column Calculations
-- Visualization
-    - Graph & Chart Creation
-    - Filters
-    - Data Drilling
-
-<br><br>
-
-## Data Sourcing
-The data used for this analysis has been directly downloaded from the City of Los Angeles Police Department Governmental [website](https://data.lacity.org/Public-Safety/Crime-Data-from-2020-to-Present/2nrs-mtv8/about_data)
-
-> Data last updated: April 30, 2025
-
-<br><br>
-
 ## Data Cleaning & Transformation <a name="anchor-data-cleaning-transformation"></a>
-**Data Cleaning**
-- Link to SQL file: [link](MySQL-Projects/Data%20Cleaning/LAPD_data_cleaning.sql)
 
-**Data Transformation**
-- Link to file with all DAX measure and calculated column formulas used for this project: [link](PowerBI-Projects/dax_and_columns)
-- Or click [here](#anchor-extra-materials) to scroll to the extra material page in this ReadMe file to view them in a clear overview 
+- Link to SQL file with cleaning queries: [SQL File](MySQL-Projects/Data%20Cleaning/LAPD_data_cleaning.sql)
+- Link to file with all DAX measure and calculated column formulas used for this project: [DAX File](PowerBI-Projects/dax_and_columns)
+
+You can also click [here](#anchor-extra-materials) to scroll to the "Extra material" section below for an in-document overview of the DAX File
 
 <br><br>
 
@@ -75,6 +68,19 @@ The data used for this analysis has been directly downloaded from the City of Lo
 One simple many to one (* > 1) data model was used to create the mo-code analysis page. For this page, I exported a table including each individual mo-code from each individual crime scene plus their count. I downloaded the mo-codes plus description from the LAPD website, and modeled them together to add the description to my own table. 
 
 ![](PowerBI-Projects/dax_and_columns/0data_model.png)
+
+<br><br>
+
+## Skills Demonstrated
+### MySQL
+- Data Cleaning (standardization, outlier removal)
+- Exploratory Data Analysis
+
+## Microsoft Power BI
+- Data Transformation & Modeling 
+- Hierarchy & Relationship Design
+- DAX Measures & Calculated Columns
+- Visualizations (charts, filters, drill-downs)
 
 <br><br>
 
@@ -315,7 +321,7 @@ A significant portion of crimes remain unresolved. Here's a breakdown of resolut
 
 <br><br>
 
-## Recommendations
+## Recommendations & Future Research
 This section outlines promising directions for extending the analysis of LAPD crime data. These recommendations focus on deepening the understanding of crime patterns, improving contextual interpretation, and enhancing the dataset's value through complementary data sources.
 
 **Weapon & Violence Analysis**
