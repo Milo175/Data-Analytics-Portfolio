@@ -50,6 +50,9 @@ Note from LAPD website:
 ## Data Sourcing
 The data used for this analysis has been directly downloaded from the City of Los Angeles Police Department Governmental [website](https://data.lacity.org/Public-Safety/Crime-Data-from-2020-to-Present/2nrs-mtv8/about_data)
 
+> Data last updated: April 30, 2025
+
+
 ## Data Cleaning & Transformation
 **Data Cleaning**
 Link to SQL file: [link](MySQL-Projects/Data%20Cleaning/LAPD_data_cleaning.sql)
@@ -65,6 +68,7 @@ One simple many to one (* > 1) data model was used to create the mo-code analysi
 ![](PowerBI-Projects/dax_and_columns/0data_model.png)
 
 ## Visualizations & Analysis
+
 ![](PowerBI-Projects/Page%201.png)
 
 ![](PowerBI-Projects/Page%202.png)
@@ -104,10 +108,6 @@ One simple many to one (* > 1) data model was used to create the mo-code analysi
 ![](PowerBI-Projects/Page%209.png)
 
 ![](PowerBI-Projects/Page%2010.png)
-
-![]()
-
-![]()
 
 ## Conclusions
 
