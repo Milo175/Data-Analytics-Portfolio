@@ -4,8 +4,8 @@ Los Angeles Police Department - Crime Statistics Analysis
 ## Introduction
 Welcome to my first official GitHub ReadMe file! My name is Milo, and I am currently in the process of educating myself in the field of Data Analytics to make it my full-time profession. For this project, I decided to analyze the crime data in the City of Los Angeles from 2020 until 2025. The data of 2024 and 2025 is incomplete in this dataset, but I decided to still use the data, since the personal practice outweighs the data usability. 
 
-LAPD:
-> This dataset reflects incidents of crime in the City of Los Angeles dating back to 2020. This data is transcribed from original crime reports that are typed on paper and therefore there may be some inaccuracies within the data. Some location fields with missing data are noted as (0°, 0°). Address fields are only provided to the nearest hundred block in order to maintain privacy. This data is as accurate as the data in the database. Please note questions or concerns in the comments.
+Note from LAPD website:
+> "This dataset reflects incidents of crime in the City of Los Angeles dating back to 2020. This data is transcribed from original crime reports that are typed on paper and therefore there may be some inaccuracies within the data. Some location fields with missing data are noted as (0°, 0°). Address fields are only provided to the nearest hundred block in order to maintain privacy. This data is as accurate as the data in the database. Please note questions or concerns in the comments."
 
 ## Problem Statements
 Nine statements or questions have been formulated to solve within this dataset. 
@@ -30,21 +30,21 @@ Nine statements or questions have been formulated to solve within this dataset.
     - Which types of crimes are most likely to remain unresolved?
 
 ## Skills Demonstrated
-MySQL 
-Data Cleaning
-Standardization
-Removing outliers
-Data Analysis
-Microsoft PowerBI 
-Data Transformation
-Data Modeling 
-Data Modeling Hierarchy 
-DAX Measure Calculations
-New Column Calculations
-Visualization
-Graph & Chart Creation
-Filters
-Data Drilling
+**MySQL** 
+- Data Cleaning
+- Standardization
+- Removing outliers
+- Data Analysis
+**Microsoft Power BI** 
+- Data Transformation
+- Data Modeling 
+- Data Modeling Hierarchy 
+- DAX Measure Calculations
+- New Column Calculations
+- Visualization
+    - Graph & Chart Creation
+    - Filters
+    - Data Drilling
 
 ## Data Sourcing
 The data used for this analysis has been directly downloaded from the City of Los Angeles Police Department Governmental [website](https://data.lacity.org/Public-Safety/Crime-Data-from-2020-to-Present/2nrs-mtv8/about_data)
