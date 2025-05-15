@@ -12,7 +12,7 @@ Los Angeles Police Department - Crime Statistics Analysis
 - [Visualizations](#visualizations)
 - [Analysis & Conclusions](#analysis--conclusions)
 - [Recommendations & Future Research](#recommendations--future-research)
-- [Extra Materials] (#extra-materials)
+- [Extra Materials](#extra-materials)
 
 
 ## Introduction
