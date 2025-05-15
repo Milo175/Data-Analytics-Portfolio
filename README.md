@@ -65,8 +65,52 @@ One simple many to one (* > 1) data model was used to create the mo-code analysi
 ![](PowerBI-Projects/dax_and_columns/0data_model.png)
 
 ## Visualizations & Analysis
+![](PowerBI-Projects/Page%201.png)
+
+![](PowerBI-Projects/Page%202.png)
+
+![](PowerBI-Projects/Page%202.1.png)
+
+![](PowerBI-Projects/Page%202.2.png)
+
+![](PowerBI-Projects/Page%203.png)
+
+![](PowerBI-Projects/Page%204.png)
+
+![](PowerBI-Projects/Page%204.1.png)
+
+![](PowerBI-Projects/Page%204.2.png)
+
+![](PowerBI-Projects/Page%204.3.png)
+
+![](PowerBI-Projects/Page%204.4.png)
+
+![](PowerBI-Projects/Page%205.png)
+
+![](PowerBI-Projects/Page%206.png)
+
+![](PowerBI-Projects/Page%206.1.png)
+
+![](PowerBI-Projects/Page%207.png)
+
+![](PowerBI-Projects/Page%207.1.png)
+
+![](PowerBI-Projects/Page%207.2.png)
+
+![](PowerBI-Projects/Page%208.png)
+
+![](PowerBI-Projects/Page%208.1.png)
+
+![](PowerBI-Projects/Page%209.png)
+
+![](PowerBI-Projects/Page%2010.png)
+
+![]()
+
+![]()
 
 ## Conclusions
+
 
 ## Recommendations
 
