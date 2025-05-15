@@ -14,7 +14,7 @@
 - [Skills Demonstrated](#skills-demonstrated)
 - [Visualizations](#visualizations)
 - [Analysis & Conclusions](#analysis--conclusions)
-- [Recommendations & Future Research](#recommendations--future-research)
+- [Future Research Recommendations](#recommendations--future-research)
 - [Extra Materials](#extra-materials)
 
 <br><br>
@@ -374,7 +374,7 @@ A significant portion of crimes remain unresolved. Here's a breakdown of resolut
 
 <br><br>
 
-## Recommendations & Future Research
+## Future Research Recommendations
 [> back to table of contents](#table-of-contents)
 
 This section outlines promising directions for extending the analysis of LAPD crime data. These recommendations focus on deepening the understanding of crime patterns, improving contextual interpretation, and enhancing the dataset's value through complementary data sources.
