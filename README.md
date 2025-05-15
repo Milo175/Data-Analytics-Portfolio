@@ -55,12 +55,11 @@ The data used for this analysis has been directly downloaded from the City of Lo
 
 ## Data Cleaning & Transformation
 **Data Cleaning**
-Link to SQL file: [link](MySQL-Projects/Data%20Cleaning/LAPD_data_cleaning.sql)
+- Link to SQL file: [link](MySQL-Projects/Data%20Cleaning/LAPD_data_cleaning.sql)
 
 **Data Transformation**
-Link to file with all DAX measure and calculated column formulas used for this project: [link](PowerBI-Projects/dax_and_columns)
-
-**Or** click here to scroll to the extra material page in this ReadMe file to view them in a clear overview [link](#anchor-extra-materials)
+- Link to file with all DAX measure and calculated column formulas used for this project: [link](PowerBI-Projects/dax_and_columns)
+- Or click here to scroll to the extra material page in this ReadMe file to view them in a clear overview [link](#anchor-extra-materials)
 
 ## Data Modeling 
 One simple many to one (* > 1) data model was used to create the mo-code analysis page. For this page, I exported a table including each individual mo-code from each individual crime scene plus their count. I downloaded the mo-codes plus description from the LAPD website, and modeled them together to add the description to my own table. 
