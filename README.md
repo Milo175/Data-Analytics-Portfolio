@@ -1,7 +1,8 @@
 # Data-Analytics-Portfolio
-Los Angeles Police Department - Crime Statistics Analysis
+**Los Angeles Police Department - Crime Statistics Analysis**
 
 ![](photos/LAPD_Home_Photo.jpeg)
+
 <br><br>
 
 ## Table of Contents
