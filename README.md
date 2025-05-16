@@ -196,6 +196,7 @@ For the Analysis and Conclusions, I will answer the nine statements formulated i
 <br><br>
 
 **1. Analyze victim age, sex, and most common area for different types of crime.**
+
 I examined the top **five most common crime types** and analyzed victim age, sex, and the most frequent reporting districts:
 
 **Table 1: five most common crime types**
@@ -219,7 +220,8 @@ Note: In 2024–2025, cases with unspecified gender increased significantly—in
 <br><br>
 
 **2. Identify the most common types of weapons used**
-    - Does this differ per crime type?
+   
+- Does this differ per crime type?
 
 **Table 2: four most common weapons used**
 
@@ -243,8 +245,9 @@ Note: Over 678K incidents lack weapon description. For this reason, the three la
 <br><br>
 
 **3. How have crime rates evolved year-over-year**
-    - Compare crime patterns during COVID lockdowns (2020–2021) vs. post-lockdown.
-    - Do crime rates differ per day of week?
+
+- Compare crime patterns during COVID lockdowns (2020–2021) vs. post-lockdown.
+- Do crime rates differ per day of week?
 
 **Table 3: total crimes reported per year**
 
@@ -269,7 +272,8 @@ Note: Over 678K incidents lack weapon description. For this reason, the three la
 <br><br>
 
 **4. What time in the day are most crimes committed?**
-    - Break it down by crime type (e.g., assaults at night vs. thefts in the morning). 
+
+- Break it down by crime type (e.g., assaults at night vs. thefts in the morning). 
 
 There is a **suspicious spike at 12:00** in nearly all crimes. This may indicate default administrative inputs when the actual time is unknown and should be investigated further.
 
@@ -286,8 +290,9 @@ There is a **suspicious spike at 12:00** in nearly all crimes. This may indicate
 <br><br>
 
 **5. Use latitude and longitude coordinates to create a heatmap of high-crime zones within the City of Los Angeles**
-    - What are the high-crime zones in the City of Los Angeles?
-    - Break it down by victim decent to find differences in high-crime zones per decent
+
+- What are the high-crime zones in the City of Los Angeles?
+- Break it down by victim decent to find differences in high-crime zones per decent
 
 **Top High-Crime Areas:**
 1. Central
@@ -316,8 +321,9 @@ Note: The overall increase for all crimes combined was **21.8%**
 <br><br>
 
 **6. Rank areas by frequency or severity of crimes**
-    - Determine the most dangerous streets
-    - Also determine the most dangerous intersections
+
+- Determine the most dangerous streets
+- Also determine the most dangerous intersections
 
 **Streets with Highest Crime Totals**:
 - 6th Street - 2957 cases
@@ -339,7 +345,8 @@ note: 6th and 7th street both individually report more than double the number of
 <br><br>
 
 **7. Are certain crimes (e.g., robbery, assault) more prevalent against specific groups?**
-    - Also identify whether specific groups are disproportionately targeted in certain areas
+
+- Also identify whether specific groups are disproportionately targeted in certain areas
     
 **Most common crimes, divided by victim demographic**
 - **Hispanic**:
@@ -390,8 +397,9 @@ The overall top 5 of mo-codes has remained stable over the years 2020 - 2023.
 <br><br>
 
 **9. What percentage of crimes have an "IC" (investigation complete) or other statuses?**
-    - Which types of crimes are most likely to remain unresolved?
-    - Calculate by total count per crimes and percentage of crimes status IC versus all statuses
+
+- Which types of crimes are most likely to remain unresolved?
+- Calculate by total count per crimes and percentage of crimes status IC versus all statuses
 
 **Table 7: breakdown of resolution percentages per crime type**
 
