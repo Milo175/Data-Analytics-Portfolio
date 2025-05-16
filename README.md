@@ -152,7 +152,7 @@ Note: please see analysis to see why weapon type 'description missing' is import
 
 ### Slide 12: A bar chart highlighting crime count on streets with intersections - including drill function to view each street individually 
 
-![](PowerBI-Projects/Page%206.png)
+![](PowerBI-Projects/Page%206V2.png)
 
 ### Slide 13: Drill function set to *'6TH ST'* for demonstrating purposes 
 
@@ -199,6 +199,7 @@ For the Analysis and Conclusions, I will answer the nine statements formulated i
 I examined the top **five most common crime types** and analyzed victim age, sex, and the most frequent reporting districts:
 
 **Table 1: five most common crime types**
+
 | Crime Type               | Total Cases | Avg. Victim Age | Most Common Area | Male   | Female | Other/Unknown |
 |--------------------------|-------------|------------------|------------------|--------|--------|----------------|
 | Vehicle Stolen           | 115,234     | 41.2             | 77th Street      | 341    | 129    | 145,000        |
@@ -220,7 +221,8 @@ Note: In 2024–2025, cases with unspecified gender increased significantly—in
 **2. Identify the most common types of weapons used**
     - Does this differ per crime type?
 
-**Table 2: 4 most common weapons used**
+**Table 2: four most common weapons used**
+
 | Weapon Type         | Total   | Avg. Age | Top Area      | Male   | Female | Other/Unknown |
 |---------------------|---------|----------|---------------|--------|--------|----------------|
 | Strong Arm (No Weapon) | 174,770 | 36.6     | 77th Street    | 69,000 | 99,000 | 6,200          |
@@ -243,6 +245,8 @@ Note: Over 678K incidents lack weapon description. For this reason, the three la
 **3. How have crime rates evolved year-over-year**
     - Compare crime patterns during COVID lockdowns (2020–2021) vs. post-lockdown.
     - Do crime rates differ per day of week?
+
+**Table 3: total crimes reported per year**
 
 | Year | Reported Crimes |
 |------|-----------------|
@@ -292,7 +296,7 @@ There is a **suspicious spike at 12:00** in nearly all crimes. This may indicate
 4. Southwest
 5. Hollywood
 
-**Areas with highest increases in crime rates between 2020 and 2023:**
+**Table 4: Areas with highest increases in crime rates between 2020 and 2023**
 
 | Area | % Increase in Crime |
 |---------------------|---------------------|
@@ -316,13 +320,16 @@ Note: The overall increase for all crimes combined was **21.8%**
     - Also determine the most dangerous intersections
 
 **Streets with Highest Crime Totals**:
-- 6th Street
-- 7th Street
-- Figueroa Street
+- 6th Street - 2957 cases
+- 7th Street - 2949 cases
+- 5th Street - 2010 cases
+- 8th Street - 1735 cases
+- Figueroa Street - 1217 cases
   
-note: 6th and 7th street both report more than double the incidents of Figueroa
+note: 6th and 7th street both individually report more than double the number of incidents on Figueroa
 
-**Top 3 Intersections**:
+**Table 5: top three intersections with highest crime count**:
+
 | Intersection         | Reported Crimes |
 |----------------------|------------------|
 | 5th St & San Pedro   | 284              |
@@ -334,13 +341,28 @@ note: 6th and 7th street both report more than double the incidents of Figueroa
 **7. Are certain crimes (e.g., robbery, assault) more prevalent against specific groups?**
     - Also identify whether specific groups are disproportionately targeted in certain areas
     
-**Disproportionate Victimization Patterns:**
-- **Hispanic**: Battery, Assault w/ Deadly Weapon, Intimate Partner Assault
-- **Black**: Battery, Assault w/ Deadly Weapon, Theft of Identity
-- **White**: Burglary, Identity Theft
-- **Asian**: Petty Theft, Identity Theft, Burglary from Vehicle
-- **Other**: Burglary, Vandalism
-- **Unknown**: Vehicle Theft, Petty Theft from Vehicles/Stores
+**Most common crimes, divided by victim demographic**
+- **Hispanic**:
+    1. Battery
+    2. Assault w/ Deadly Weapon
+    3. Intimate Partner Assault
+- **Black**:
+    1. Battery
+    2. Assault w/ Deadly Weapon
+    3. Theft of Identity
+- **White**:
+    1. Burglary
+    2. Identity Theft
+- **Asian**:
+    1. Petty Theft
+    2. Identity Theft
+    3. Burglary from Vehicle
+- **Other**:
+    1. Burglary
+    2. Vandalism
+- **Unknown**:
+    1. Vehicle Theft
+    2. Petty Theft from Vehicles/Stores
 
 Note: Counts for **American Indian** and **Pacific Islander** groups were too low to draw statistically significant conclusions.
 
@@ -348,7 +370,7 @@ Note: Counts for **American Indian** and **Pacific Islander** groups were too lo
 
 **8. Extract and visualize trends from Mocodes to see popular tactics or criminal behavior**
 
-**Most common MO Codes:**
+**Table 6: Most common MO Codes found:**
 
 | MO Code | Description               | Count   |
 |---------|---------------------------|---------|
@@ -358,7 +380,12 @@ Note: Counts for **American Indian** and **Pacific Islander** groups were too lo
 | 329     | Vandalized                | 130,000 |
 | 416     | Hit w/ Weapon             | 112,000 |
 
-These patterns have remained stable over the years.
+**Analysis**:
+- It more than twice as common for the perpetrator and the victim to be strangers (342K cases) than to know each other (142K cases)
+- Often times, the perpetrator steals a form of property from the victim (299K cases)
+- The fifth most common mo-code is the use of a weapon to physically harm the victim (112K cases) - as oppossed to using it as a threat
+    
+The overall top 5 of mo-codes has remained stable over the years 2020 - 2023.
 
 <br><br>
 
@@ -366,7 +393,7 @@ These patterns have remained stable over the years.
     - Which types of crimes are most likely to remain unresolved?
     - Calculate by total count per crimes and percentage of crimes status IC versus all statuses
 
-A significant portion of crimes remain unresolved. Here's a breakdown of resolution percentages:
+**Table 7: breakdown of resolution percentages per crime type**
 
 | Crime Type                    | IC Cases | Total Cases | % Resolved (IC) |
 |-------------------------------|----------|-------------|------------------|
@@ -379,8 +406,15 @@ A significant portion of crimes remain unresolved. Here's a breakdown of resolut
 | Battery – Simple Assault      | 49,822   | 74,842      | 66.6%            |
 | Assault w/ Deadly Weapon      | 32,295   | 53,528      | 60.3%            |
 
+**Analysis:**
+- A significant portion of crimes have the IC status, indicating that the investigation is still ongoing.
+- The most common crime types to remain unsolved are: Theft of Identity, Burglary from Vehicle, and Petty Theft.
+- A surprising find is that 60.3% of assaults with deadly weapons have an IC status, given the severity of the crime.
+
 **Trend:**
-“IC” cases increased slightly over time, but arrests (Adult Arrest - AA, Adult Other - AO) decreased, possibly pointing to decreased enforcement or efficiency.
+“IC” cases increased slightly over time, but arrests (Adult Arrest - AA, Adult Other - AO) decreased, possibly pointing to decreased enforcement or efficiency by the LAPD. 
+
+Note: There could be many reasons behind the high IC rates in the above table, which are not simply limited to decreased enforcement of the LAPD. Further reserach is required to understand the reason behind this.
 
 <br><br>
 
@@ -400,8 +434,9 @@ This section outlines promising directions for extending the analysis of LAPD cr
 - Check statistical validity of findings for underrepresented groups (e.g., Islanders, Native Americans, Alaskans) — assess if sample sizes are large enough to draw meaningful conclusions.
 
 **Data Quality**
-- In 2024–2025, cases with unspecified gender increased significantly - the cause behind this needs to be researched to better interpret future datasets.
+- In 2024–2025, cases with unspecified gender increased significantly - the cause behind this needs to be researched to better interpret future datasets and improve dataset quality.
 - Over 678K incidents lack weapon description. This represents a significant gap in reporting and may affect long-term trend analysis unless addressed in future datasets.
+- The high rates in IC status cases needs to be questioned and understood to increase dataset quality in future years.
 
 **Behavioral & Pattern Analysis**
 - Analyze MO (Modus Operandi) code combinations to detect repeated strategies, behavioral patterns, or organized criminal activity.
