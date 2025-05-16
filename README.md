@@ -275,8 +275,6 @@ Note: Over 678K incidents lack weapon description. For this reason, the three la
 
 - Break it down by crime type (e.g., assaults at night vs. thefts in the morning). 
 
-There is a **suspicious spike at 12:00** in nearly all crimes. This may indicate default administrative inputs when the actual time is unknown and should be investigated further.
-
 **General Trend:**
 - Early morning rise starts around **5:00–7:00**, peaks from **16:00 to 21:00**, and tapers off overnight.
 
@@ -286,6 +284,8 @@ There is a **suspicious spike at 12:00** in nearly all crimes. This may indicate
 - **Burglary from Vehicle**: Spikes between **17:00–00:00**.
 - **Theft of Identity**: Sharp spikes at **00:00 and 12:00**—requires further investigation.
 - **Vandalism / Assault with Deadly Weapon**: Matches the general trend; peak at **21:00**, drop-off after **2:00**.
+
+Note: There is a **suspicious spike at 12:00** in nearly all crimes. This may indicate default administrative inputs when the actual time is unknown and should be investigated further.
 
 <br><br>
 
