@@ -22,7 +22,7 @@
 ## Introduction
 [> back to table of contents](#table-of-contents)
 
-Welcome to my first official GitHub ReadMe file! My name is Milo, and I am currently in the process of educating myself in the field of Data Analytics to make it my full-time profession. For this project, I decided to analyze the crime data in the City of Los Angeles from 2020 until 2025. The data of 2024 and 2025 is incomplete in this dataset, but I decided to still use the data, since the personal practice outweighs the data usability. 
+Welcome to my first official GitHub Project! My name is Milo, and I am currently in the process of educating myself in the field of Data Analytics where the goal is to make it my full-time profession. For this project, I have analyzed the crime data of the City of Los Angeles dating between the years 2020 and 2025. The data of 2024 and 2025 is incomplete in this dataset, but I decided to still use the data, since the personal practice outweighs the data usability. 
 
 Note from LAPD website:
 > "This dataset reflects incidents of crime in the City of Los Angeles dating back to 2020. This data is transcribed from original crime reports that are typed on paper and therefore there may be some inaccuracies within the data. Some location fields with missing data are noted as (0°, 0°). Address fields are only provided to the nearest hundred block in order to maintain privacy. This data is as accurate as the data in the database. Please note questions or concerns in the comments."
@@ -32,7 +32,7 @@ Note from LAPD website:
 ## Data Sourcing
 [> back to table of contents](#table-of-contents)
 
-The data used for this analysis has been directly downloaded from the City of Los Angeles Police Department Governmental [website](https://data.lacity.org/Public-Safety/Crime-Data-from-2020-to-Present/2nrs-mtv8/about_data)
+The data used for this analysis has been directly downloaded from the City of Los Angeles Police Department Governmental [website](https://data.lacity.org/Public-Safety/Crime-Data-from-2020-to-Present/2nrs-mtv8/about_data).
 
 > Data last updated: April 30, 2025
 
@@ -45,23 +45,23 @@ The data used for this analysis has been directly downloaded from the City of Lo
 1. Analyze victim age, sex, and most common area for different types of crime.
 2. Identify the most common types of weapons used.
     - Does this differ per crime type?
-3. How have crime rates evolved year-over-year
+3. How have crime rates evolved year-over-year?
     - Compare crime patterns during COVID lockdowns (2020–2021) vs. post-lockdown.
     - Do crime rates differ per day of week?
 4. What time in the day are most crimes committed?
     - Break it down by crime type (e.g., assaults at night vs. thefts in the morning).
-5. Use LAT and LON coordinates to create a heatmap of high-crime zones within the City of Los Angeles
+5. Use LAT and LON coordinates to create a heatmap of high-crime zones within the City of Los Angeles.
     - What are the high-crime zones in the City of Los Angeles?
-    - Break it down by victim decent to find differences in high-crime zones per decent
+    - Break it down by victim decent to find differences in high-crime zones per decent.
 6. Rank areas by frequency or severity of crimes.
-    - Determine the most dangerous streets
-    - Also determine the most dangerous intersections
+    - Determine the most dangerous streets.
+    - Also determine the most dangerous intersections.
 7. Are certain crimes (e.g., robbery, assault) more prevalent against specific groups?
     - Identify whether specific groups are disproportionately targeted in certain areas.
 8. Extract and visualize trends from Mocodes to see popular tactics or criminal behavior.
 9. What percentage of crimes have an "IC" (investigation complete) or other statuses?
     - Which types of crimes are most likely to remain unresolved?
-    - Calculate by total count per crimes and percentage of crimes status IC versus all statuses
+    - Calculate by total count per crimes and percentage of crimes status IC versus all statuses.
 
 <br><br>
 
@@ -71,12 +71,14 @@ The data used for this analysis has been directly downloaded from the City of Lo
 - Link to SQL file with cleaning queries: [SQL File](MySQL-Projects/Data%20Cleaning/LAPD_data_cleaning.sql)
 - Link to file with all DAX measure and calculated column formulas used for this project: [DAX File](PowerBI-Projects/dax_and_columns)
 
-You can also click [here](#anchor-extra-materials) to scroll to the "Extra material" section below for an in-document overview of the DAX File
+You can also click [here](#anchor-extra-materials) to scroll to the "Extra material" section below for an in-document overview of the DAX File.
 
 <br><br>
 
 ## Data Modeling 
-One simple many to one (* > 1) data model was used to create the mo-code analysis page. For this page, I exported a table including each individual mo-code from each individual crime scene plus their count. I downloaded the mo-codes plus description from the LAPD website, and modeled them together to add the description to my own table. 
+In terms of data modeling, I applied one simple 'many to one' (* > 1) data model that helped me create the mo-code analysis page. I exported a table including the individual mo-code(s) from each unique crime scene, includign their count. I downloaded the mo-code descriptions from the LAPD website, and modeled them together to add the description to my own table. 
+
+**The data model within Power BI:**
 
 ![](PowerBI-Projects/dax_and_columns/0data_model.png)
 
@@ -100,7 +102,7 @@ One simple many to one (* > 1) data model was used to create the mo-code analysi
 ## Visualizations
 [> back to table of contents](#table-of-contents)
 
-Note: each slide includes a filter function to select specifics year(s) to highlight and investigate
+Note: each slide includes a filter function to view the data from one, multiple, or all year(s).
 
 ### Slide 1: A General Analysis
 
@@ -194,8 +196,9 @@ For the Analysis and Conclusions, I will answer the nine statements formulated i
 <br><br>
 
 **1. Analyze victim age, sex, and most common area for different types of crime.**
-We examined the top five most common crime types and analyzed victim age, sex, and the most frequent reporting districts:
+I examined the top **five most common crime types** and analyzed victim age, sex, and the most frequent reporting districts:
 
+**Table 1: five most common crime types**
 | Crime Type               | Total Cases | Avg. Victim Age | Most Common Area | Male   | Female | Other/Unknown |
 |--------------------------|-------------|------------------|------------------|--------|--------|----------------|
 | Vehicle Stolen           | 115,234     | 41.2             | 77th Street      | 341    | 129    | 145,000        |
@@ -206,15 +209,18 @@ We examined the top five most common crime types and analyzed victim age, sex, a
 
 **Key Insights:**
 - The average victim age ranges from 38 to 42 years.
-- Crime locations are most frequently reported in 77th Street and Central divisions.
+- Crime locations are most frequently reported in two areas: 77th Street and Central.
 - Gender distribution varies per crime, with some (e.g. vehicle theft) having large amounts of unspecified gender data.
-- In 2024–2025, cases with unspecified gender increased significantly—interpret data from these years with caution due to dataset incompleteness.
+    - Men are commonly targetted for Burglary from Vehicle or Vandalism, whereas women often fall victim to Theft of Identity.
+
+Note: In 2024–2025, cases with unspecified gender increased significantly—interpret data from these years with caution due to dataset incompleteness.
 
 <br><br>
 
 **2. Identify the most common types of weapons used**
     - Does this differ per crime type?
-   
+
+**Table 2: 4 most common weapons used**
 | Weapon Type         | Total   | Avg. Age | Top Area      | Male   | Female | Other/Unknown |
 |---------------------|---------|----------|---------------|--------|--------|----------------|
 | Strong Arm (No Weapon) | 174,770 | 36.6     | 77th Street    | 69,000 | 99,000 | 6,200          |
@@ -222,15 +228,15 @@ We examined the top five most common crime types and analyzed victim age, sex, a
 | Verbal Threat          | 23,850  | 39.6     | 77th Street    | 11,000 | 11,500 | 1,300          |
 | Handgun                | 20,180  | 34.5     | 77th Street    | 13,600 | 4,700  | 1,900          |
 
-**Weapon Type Breakdown by Crime**:
+**Weapon Type Breakdown by Most Common Crimes and number of times used**:
 - **Vehicle Stolen**: Weapon not described in 115K cases; next most common is Strong Arm (23 cases).
-- **Battery – Simple Assault**: Strong Arm (67.5K) is by far the most common.
-- **Burglary from Vehicle**: Mostly lacks weapon description (~60K).
-- **Assault with Deadly Weapon**: Handgun (7.7K) and Strong Arm (7.1K) dominate.
-- **Robbery**: Strong Arm (14K) and Handgun (5.9K) are most used.
-- **Intimate Partner – Simple Assault**: Strong Arm (44K), then Unknown (2K).
+- **Battery – Simple Assault**: Strong Arm (67.5K cases) is by far the most common.
+- **Burglary from Vehicle**: Mostly lacks weapon description (~60K cases).
+- **Assault with Deadly Weapon**: Handgun (7.7K cases) and Strong Arm (7.1K cases) dominate.
+- **Robbery**: Again, Strong Arm (14K) and Handgun (5.9K cases) are most used.
+- **Intimate Partner – Simple Assault**: Strong Arm (44K cases), then Unknown Weapon/Other Weapon used (2K cases).
 
-**Note**: Over 678K incidents lack weapon description. This represents a significant gap in reporting and may affect long-term trend analysis unless addressed in future datasets.
+Note: Over 678K incidents lack weapon description. For this reason, the three latter crimes types above were the most common crime types where the weapon used was identified/known.
 
 <br><br>
 
@@ -245,7 +251,12 @@ We examined the top five most common crime types and analyzed victim age, sex, a
 | 2022 | ~235,000        |
 | 2023 | Slight decrease |
 
-Day of the Week Patterns (2020–2023):
+**Crime Patterns Post-Covid:**
+- From 2021 to 2022, the total number of crimes committed increased by 11.9%.
+- From 2022 to 2023, this count stabalized, only decreasing by 1%.
+- The data from 2024 and 2025 is needed to further study the Post-Covid effect on crimes committed in LA.
+  
+**Day of the Week Patterns (2020–2023):**
 - **Friday** has the highest number of reported crimes (9% higher than Mon–Thu average).
 - **Saturday** ranks second.
 - **Tuesday** consistently records the fewest crimes.
@@ -261,7 +272,7 @@ There is a **suspicious spike at 12:00** in nearly all crimes. This may indicate
 **General Trend:**
 - Early morning rise starts around **5:00–7:00**, peaks from **16:00 to 21:00**, and tapers off overnight.
 
-**By Crime Type:**
+**By Most Common Crime Types:**
 - **Vehicle Stolen**: Peaks between **16:00–23:00**.
 - **Battery – Simple Assault**: Peaks between **9:00–00:00**, with smaller morning spikes.
 - **Burglary from Vehicle**: Spikes between **17:00–00:00**.
@@ -270,29 +281,28 @@ There is a **suspicious spike at 12:00** in nearly all crimes. This may indicate
 
 <br><br>
 
-**5. Use LAT and LON coordinates to create a heatmap of high-crime zones within the City of Los Angeles**
+**5. Use latitude and longitude coordinates to create a heatmap of high-crime zones within the City of Los Angeles**
     - What are the high-crime zones in the City of Los Angeles?
     - Break it down by victim decent to find differences in high-crime zones per decent
 
-
-**Top High-Crime Areas (by Reporting Division):**
+**Top High-Crime Areas:**
 1. Central
 2. 77th Street
 3. Pacific
 4. Southwest
 5. Hollywood
 
-**Fastest Growth in Crime:**
+**Areas with highest increases in crime rates between 2020 and 2023:**
 
-| Reporting Division | % Increase in Crime |
+| Area | % Increase in Crime |
 |---------------------|---------------------|
 | Central             | +46.2%              |
 | Rampart             | +27.8%              |
 | Wilshire            | +26.1%              |
 
-Note: The overall increase in crime between 2020 and 2023 was **21.8%**
+Note: The overall increase for all crimes combined was **21.8%**
 
-**Demographic Heatmap Patterns:**
+**Most Common Areas by Demographic:**
 - **Hispanic**: Most common in Mission, Newton, 77th Street, Hollenbeck.
 - **White**: More active in Pacific, West LA, North Hollywood, Hollywood.
 - **Black**: Highest in 77th Street, Southwest, Southeast.
@@ -388,6 +398,10 @@ This section outlines promising directions for extending the analysis of LAPD cr
 - Compare crime victim data by descent to the actual population distribution by area. Helps assess disproportional targeting or exposure.
 - Cross-reference with census data to get victims per capita metrics for each descent group.
 - Check statistical validity of findings for underrepresented groups (e.g., Islanders, Native Americans, Alaskans) — assess if sample sizes are large enough to draw meaningful conclusions.
+
+**Data Quality**
+- In 2024–2025, cases with unspecified gender increased significantly - the cause behind this needs to be researched to better interpret future datasets.
+- Over 678K incidents lack weapon description. This represents a significant gap in reporting and may affect long-term trend analysis unless addressed in future datasets.
 
 **Behavioral & Pattern Analysis**
 - Analyze MO (Modus Operandi) code combinations to detect repeated strategies, behavioral patterns, or organized criminal activity.
