@@ -68,7 +68,7 @@ The data used for this analysis has been directly downloaded from the City of Lo
 ## Data Cleaning & Transformation <a name="anchor-data-cleaning-transformation"></a>
 [> back to table of contents](#table-of-contents)
 
-- Link to SQL file with cleaning queries: [SQL File](MySQL-Projects/Data%20Cleaning/LAPD_data_cleaning.sql)
+- Link to the MySQL file with cleaning queries: [MySQL File](MySQL-Projects/Data%20Cleaning/LAPD_data_cleaning.sql)
 - Link to file with all DAX measure and calculated column formulas used for this project: [DAX File](PowerBI-Projects/dax_and_columns)
 
 You can also click [here](#anchor-extra-materials) to scroll to the "Extra material" section below for an in-document overview of the DAX File.
