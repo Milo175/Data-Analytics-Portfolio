@@ -325,22 +325,32 @@ Note: The overall increase for all crimes combined was **21.8%**
 - Determine the most dangerous streets
 - Also determine the most dangerous intersections
 
-**Streets with Highest Crime Totals**:
-- 6th Street - 2957 cases
-- 7th Street - 2949 cases
-- 5th Street - 2010 cases
-- 8th Street - 1735 cases
-- Figueroa Street - 1217 cases
-  
-note: 6th and 7th street both individually report more than double the number of incidents on Figueroa
+**Table 5: Streets with Highest Crime Totals**
 
-**Table 5: top three intersections with highest crime count**:
+|Street     |Reported Crimes |
+|-----------|----------------|
+|6th Street |2957 cases      |
+|7th Street |2949 cases      |
+|5th Street |2010 cases      |
+|8th Street |1735 cases |
+|Figueroa Street|1217 cases|
+
+- The three streets with most overall intersection crime scenes are 6th, 7th and 5th street.
+  
+Note: 6th and 7th street both individually report more than double the number of incidents on Figueroa
+
+**Table 6: top three intersections with highest crime count**
 
 | Intersection         | Reported Crimes |
 |----------------------|------------------|
 | 5th St & San Pedro   | 284              |
 | 7th St & Figueroa    | 244              |
 | 6th St & San Pedro   | 229              |
+
+- The three individual street intersection with most crime scenes are:
+    - 5th & San Pedro
+    - 7th & Figueroa
+    - 6th & San Pedro
 
 <br><br>
 
@@ -377,7 +387,7 @@ Note: Counts for **American Indian** and **Pacific Islander** groups were too lo
 
 **8. Extract and visualize trends from Mocodes to see popular tactics or criminal behavior**
 
-**Table 6: Most common MO Codes found:**
+**Table 7: Most common MO Codes found**
 
 | MO Code | Description               | Count   |
 |---------|---------------------------|---------|
@@ -401,7 +411,7 @@ The overall top 5 of mo-codes has remained stable over the years 2020 - 2023.
 - Which types of crimes are most likely to remain unresolved?
 - Calculate by total count per crimes and percentage of crimes status IC versus all statuses
 
-**Table 7: breakdown of resolution percentages per crime type**
+**Table 8: breakdown of resolution percentages per crime type**
 
 | Crime Type                    | IC Cases | Total Cases | % Resolved (IC) |
 |-------------------------------|----------|-------------|------------------|
