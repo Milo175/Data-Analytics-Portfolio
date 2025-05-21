@@ -40,7 +40,7 @@ A significant portion of the dataset — over 678,000 incidents — **lacks info
 
 The Central, 77th Street, and Pacific divisions report the **highest crime frequencies**. Notably, Central Division experienced a **46.2% rise in crime from 2020 to 2023** — more than double the citywide average increase of 21.8%.
 
-Crime exposure also differs by **victim descent**. Hispanic individuals are more frequently victimized in the **Mission** and **Newton** divisions, whereas Asian victims are most often targeted in the **Olympic**, **Central**, and **West LA **divisions. When analyzing demographics versus crime types, black victims are predominantly involved in cases of **battery**, **assault with a deadly weapon**, and **identity theft**, while white victims are more often affected by **burglary** and **identity theft**.
+Crime exposure also differs by **victim descent**. Hispanic individuals are more frequently victimized in the **Mission** and **Newton** divisions, whereas Asian victims are most often targeted in the **Olympic**, **Central**, and **West LA** divisions. When analyzing demographics versus crime types, black victims are predominantly involved in cases of **battery**, **assault with a deadly weapon**, and **identity theft**, while white victims are more often affected by **burglary** and **identity theft**.
 
 Analysis of **Modus Operandi** (MO) codes reveals that in most cases, **victims and suspects are strangers** — a pattern observed at more than twice the rate of incidents where both parties knew each other. Other prevalent MO patterns include **theft of victim property** and **physical assault with a weapon**.
 
