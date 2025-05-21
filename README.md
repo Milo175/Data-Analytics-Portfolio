@@ -19,19 +19,42 @@
 
 <br><br>
 
-## Summary
+## Introduction
 [> back to table of contents](#table-of-contents)
 
 Welcome to my first official GitHub Project! My name is Milo, and I am currently in the process of educating myself in the field of Data Analytics. For this project, I have analyzed the crime data of the City of Los Angeles dating between the years 2020 and 2025. The data of 2024 and 2025 is incomplete in this dataset. However, I still decided to use the data, since the personal practice outweighs the data usability. The data was analysed through formulating nine problem statements or questios to answer. This includes analysis on victim age or sex, weapons used, crime types committed, distribution of crimes throughout a 24-hour day, location hot-spots, and a deep-dive into victim demographical trends.
 
 The **goal** of the project was to practice my knowledge of MySQL and MS Power BI on a real-world dataset. **Skills demonstrated** in the process include data cleaning, SQL EDA, Data Transformation & Modeling, DAX Measures, Calculated Columns and Data Visualization. 
 
-
-
-
-- 
 Note from LAPD website:
 > "This dataset reflects incidents of crime in the City of Los Angeles dating back to 2020. This data is transcribed from original crime reports that are typed on paper and therefore there may be some inaccuracies within the data. Some location fields with missing data are noted as (0°, 0°). Address fields are only provided to the nearest hundred block in order to maintain privacy. This data is as accurate as the data in the database. Please note questions or concerns in the comments."
+
+<br><br>
+
+## Executive Summary
+The average age of crime victims ranges between 38 and 42 years. Geographically, the highest number of crimes are reported in the 77th Street and Central divisions.
+
+A significant portion of the dataset — over 678,000 incidents — lacks information about weapon usage. However, among cases where a weapon is reported, the most common methods include physical force ("Strong Arm"), followed by the use of unidentified weapons and verbal threats.
+
+Crime volume increased by 11.9% following the lifting of COVID-19 restrictions. Fridays and Saturdays consistently show the highest crime rates across all years. Daily crime activity typically peaks between 4:00 PM and 9:00 PM, a trend that holds across most crime types.
+
+The Central, 77th Street, and Pacific divisions report the highest crime frequencies. Notably, Central Division experienced a 46.2% rise in crime from 2020 to 2023 — more than double the citywide average increase of 21.8%.
+
+Crime exposure also differs by victim descent. Hispanic individuals are more frequently victimized in the Mission and Newton divisions, whereas Asian victims are most often targeted in the Olympic, Central, and West LA divisions. Black victims are predominantly involved in cases of battery, assault with a deadly weapon, and identity theft, while white victims are more often affected by burglary and identity theft.
+
+Analysis of Modus Operandi (MO) codes reveals that in most cases, victims and suspects are strangers — a pattern observed at more than twice the rate of incidents involving acquaintances. Other prevalent MO patterns include theft of victim property and physical assault with a weapon.
+
+Lastly, a large proportion of crimes remain unresolved. Investigation Continued (IC) is the status for:
+
+- 98.4% of identity theft cases
+- 98.0% of vehicle burglaries
+- 94.7% of petty theft incidents
+
+Even for more severe offenses such as assault with a deadly weapon, 60.3% of cases remain under continued investigation.
+
+This project uncovered some interesting patterns around who’s affected by crime, when and where it tends to happen, and how cases are handled. But there’s still a lot more that could be explored. Next steps that could really add value include digging into how crime impacts different demographic groups compared to their population size, analyzing patterns in how crimes are carried out using MO codes, and building a severity index to highlight not just how often, but how serious the crimes are across the city. These kinds of follow-ups would help paint a fuller picture of crime in Los Angeles — and maybe even spark ideas for real-world improvements.
+
+It’s also worth pointing out some blind spots in the data. A huge chunk of cases are missing basic info like weapon details or even the victim’s gender — especially in the most recent years. On top of that, a large share of cases are stuck in “investigation continued” status, which makes it harder to get a clear picture of outcomes. Looking into why that happens could really help improve how we interpret future crime data.
 
 <br><br>
 
