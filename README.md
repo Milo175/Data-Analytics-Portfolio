@@ -19,11 +19,17 @@
 
 <br><br>
 
-## Introduction
+## Summary
 [> back to table of contents](#table-of-contents)
 
-Welcome to my first official GitHub Project! My name is Milo, and I am currently in the process of educating myself in the field of Data Analytics where the goal is to make it my full-time profession. For this project, I have analyzed the crime data of the City of Los Angeles dating between the years 2020 and 2025. The data of 2024 and 2025 is incomplete in this dataset, but I decided to still use the data, since the personal practice outweighs the data usability. 
+Welcome to my first official GitHub Project! My name is Milo, and I am currently in the process of educating myself in the field of Data Analytics. For this project, I have analyzed the crime data of the City of Los Angeles dating between the years 2020 and 2025. The data of 2024 and 2025 is incomplete in this dataset. However, I still decided to use the data, since the personal practice outweighs the data usability. The data was analysed through formulating nine problem statements or questios to answer. This includes analysis on victim age or sex, weapons used, crime types committed, distribution of crimes throughout a 24-hour day, location hot-spots, and a deep-dive into victim demographical trends.
 
+The **goal** of the project was to practice my knowledge of MySQL and MS Power BI on a real-world dataset. **Skills demonstrated** in the process include data cleaning, SQL EDA, Data Transformation & Modeling, DAX Measures, Calculated Columns and Data Visualization. 
+
+
+
+
+- 
 Note from LAPD website:
 > "This dataset reflects incidents of crime in the City of Los Angeles dating back to 2020. This data is transcribed from original crime reports that are typed on paper and therefore there may be some inaccuracies within the data. Some location fields with missing data are noted as (0°, 0°). Address fields are only provided to the nearest hundred block in order to maintain privacy. This data is as accurate as the data in the database. Please note questions or concerns in the comments."
 
@@ -406,14 +412,14 @@ The overall top 5 of mo-codes has remained stable over the years 2020 - 2023.
 
 <br><br>
 
-**9. What percentage of crimes have an "IC" (investigation complete) or other statuses?**
+**9. What percentage of crimes have an "IC" (investigation continued) or other statuses?**
 
 - Which types of crimes are most likely to remain unresolved?
 - Calculate by total count per crimes and percentage of crimes status IC versus all statuses
 
 **Table 8: breakdown of resolution percentages per crime type**
 
-| Crime Type                    | IC Cases | Total Cases | % Resolved (IC) |
+| Crime Type                    | IC Cases | Total Cases | % Unresolved (IC) |
 |-------------------------------|----------|-------------|------------------|
 | Theft of Identity             | 61,560   | 62,539      | 98.4%            |
 | Burglary from Vehicle         | 62,253   | 63,516      | 98.0%            |
