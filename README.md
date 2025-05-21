@@ -32,6 +32,7 @@ Note from LAPD website:
 <br><br>
 
 ## Executive Summary
+[> back to table of contents](#table-of-contents)
 The average **age** of crime victims ranges between 38 and 42 years. Geographically, the highest number of crimes are reported in the **77th Street and Central divisions**.
 
 A significant portion of the dataset — over 678,000 incidents — **lacks information about weapon usage**. However, among cases where a weapon is reported, the most common methods include physical force ("**Strong Arm**"), followed by the use of **unidentified weapons** and **verbal threats**.
