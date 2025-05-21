@@ -19,7 +19,7 @@
 
 <br><br>
 
-## Introduction
+## Project in a nutshell
 [> back to table of contents](#table-of-contents)
 
 Welcome to my first official GitHub Project! My name is Milo, and I am currently in the process of educating myself in the field of Data Analytics. For this project, I have analyzed the crime data of the City of Los Angeles dating between the years 2020 and 2025. The data of 2024 and 2025 is incomplete in this dataset. However, I still decided to use the data, since the personal practice outweighs the data usability. The data was analysed through formulating nine problem statements or questions to answer. This includes analysis on victim age or sex, weapons used, crime types committed, distribution of crimes throughout a 24-hour day, location hot-spots, and a deep-dive into victim demographical trends.
