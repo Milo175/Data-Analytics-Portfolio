@@ -126,7 +126,7 @@ In terms of data modeling, I applied one simple 'many to one' (* > 1) data model
 #### Microsoft Power BI
 - Data Transformation & Modeling 
 - Hierarchy & Relationship Design
-- DAX Measures & Calculated Columns
+- Measures & Calculated Columns
 - Visualizations (charts, filters, drill-downs)
 
 <br><br>
@@ -475,22 +475,22 @@ This section outlines promising directions for extending the analysis of LAPD cr
 
 **Weapon & Violence Analysis**
 - Identify weapons most associated with violent crimes (e.g., assault, homicide, robbery).
-- Analyze trends in weapon usage over time — are guns becoming more prevalent? Are bladed weapons declining?
+- Analyze trends in weapon usage over time: are guns becoming more prevalent? Are bladed weapons declining?
 - Investigate the relationship between weapon type and resolution rate (e.g., are crimes involving firearms solved more or less often?).
 
 **Demographic Fairness & Representation**
 - Compare crime victim data by descent to the actual population distribution by area. Helps assess disproportional targeting or exposure.
 - Cross-reference with census data to get victims per capita metrics for each descent group.
-- Check statistical validity of findings for underrepresented groups (e.g., Islanders, Native Americans, Alaskans) — assess if sample sizes are large enough to draw meaningful conclusions.
+- Check statistical validity of findings for underrepresented groups (e.g., Islanders, Native Americans, Alaskans). Will need assess if sample sizes are large enough to draw meaningful conclusions.
 
 **Data Quality**
-- In 2024–2025, cases with unspecified gender increased significantly - the cause behind this needs to be researched to better interpret future datasets and improve dataset quality.
+- In 2024–2025, cases with unspecified gender increased significantly. The cause behind this needs to be researched to better interpret future datasets and improve dataset quality.
 - Over 678K incidents lack weapon description. This represents a significant gap in reporting and may affect long-term trend analysis unless addressed in future datasets.
 - The high rates in IC status cases needs to be questioned and understood to increase dataset quality in future years.
 
 **Behavioral & Pattern Analysis**
 - Analyze MO (Modus Operandi) code combinations to detect repeated strategies, behavioral patterns, or organized criminal activity.
-- Study co-occurrence patterns among crime types — e.g., is burglary often reported alongside trespassing or vandalism?
+- Study co-occurrence patterns among crime types, e.g., is burglary often reported alongside trespassing or vandalism?
 
 **Police Division Performance**
 - Compare clearance/resolution rates across LAPD divisions.
@@ -525,7 +525,7 @@ This section outlines promising directions for extending the analysis of LAPD cr
 
 Click [here](#anchor-data-cleaning-transformation) to go back to data transformations
 
-**DAX measures and calculated columns used for this project:**
+**Measures and calculated columns used for this project:**
 
 - To add column with days in the week, expressed as numbers 1-7 (mon-sun)
 
