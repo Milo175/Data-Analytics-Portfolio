@@ -34,7 +34,6 @@ Note from LAPD website:
 
 <br><br>
 
-
 ## Executive Summary
 [> back to table of contents](#table-of-contents)
 
