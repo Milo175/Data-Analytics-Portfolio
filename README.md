@@ -4,7 +4,7 @@
 
 <br><br>
 
-## Introduction to the project
+## Introduction to the project <a name="introduction"></a>
 [> back to table of contents](#table-of-contents)
 
 Welcome to my first official GitHub Project! My name is Milo, and I am currently in the process of educating myself in the field of Data Analytics. For this project, I have analyzed the crime data of the City of Los Angeles dating between the years 2020 and 2025. The data of 2024 and 2025 is incomplete in this dataset. However, I still decided to use the data, since the personal practice outweighs the data usability. 
