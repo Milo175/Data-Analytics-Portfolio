@@ -4,22 +4,7 @@
 
 <br><br>
 
-## Table of Contents <a name="table-of-contents"></a>
-
-- [Introduction](#introduction)
-- [Data Sourcing](#data-sourcing)
-- [Problem Statements](#problem-statements)
-- [Data Cleaning & Transformation](#data-cleaning--transformation)
-- [Data Modeling](#data-modeling)
-- [Skills Demonstrated](#skills-demonstrated)
-- [Visualizations](#visualizations)
-- [Analysis & Conclusions](#analysis--conclusions)
-- [Future Research Recommendations](#recommendations--future-research)
-- [Extra Materials](#extra-materials)
-
-<br><br>
-
-## Project in a nutshell
+## Introduction to the project
 [> back to table of contents](#table-of-contents)
 
 Welcome to my first official GitHub Project! My name is Milo, and I am currently in the process of educating myself in the field of Data Analytics. For this project, I have analyzed the crime data of the City of Los Angeles dating between the years 2020 and 2025. The data of 2024 and 2025 is incomplete in this dataset. However, I still decided to use the data, since the personal practice outweighs the data usability. 
@@ -32,6 +17,23 @@ Note from LAPD website:
 > "This dataset reflects incidents of crime in the City of Los Angeles dating back to 2020. This data is transcribed from original crime reports that are typed on paper and therefore there may be some inaccuracies within the data. Some location fields with missing data are noted as (0°, 0°). Address fields are only provided to the nearest hundred block in order to maintain privacy. This data is as accurate as the data in the database. Please note questions or concerns in the comments."
 
 <br><br>
+
+## Table of Contents <a name="table-of-contents"></a>
+
+- [Introduction](#introduction)
+- [Executive Summary](#executive-summary)
+- [Data Sourcing](#data-sourcing)
+- [Problem Statements](#problem-statements)
+- [Data Cleaning & Transformation](#data-cleaning--transformation)
+- [Data Modeling](#data-modeling)
+- [Skills Demonstrated](#skills-demonstrated)
+- [Visualizations](#visualizations)
+- [Analysis & Conclusions](#analysis--conclusions)
+- [Future Research Recommendations](#recommendations--future-research)
+- [Extra Materials](#extra-materials)
+
+<br><br>
+
 
 ## Executive Summary
 [> back to table of contents](#table-of-contents)
